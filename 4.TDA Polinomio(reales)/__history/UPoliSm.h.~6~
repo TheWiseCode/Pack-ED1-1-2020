@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+
+#ifndef UPoliSmH
+#define UPoliSmH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "Funciones.h"
+#include "UMemoria.h"
+
+using namespace std;
+
+const string data = "coef,exp,sig";
+const string coef = "->coef";
+const string exp = "->exp";
+const string sig = "->sig";
+
+class PoliSm{
+private:
+	CSMemoria *mem;
+	int ptrPoli;
+	int nt; // numero de terminos
+	// metodos privados
+	NodoPoli* existe_exponente(int exp);
+	NodoPoli* anterior(NodoPoli* p);
+	void suprime(NodoPoli* p);
+
+public:
+	PoliPtr();
+	bool es_cero();
+	void poner_termino(int coef, int exp);
+	int coeficiente(int exp);
+	int exponente(int nro);
+	int grado();
+	int numero_terminos();
+	PoliPtr *suma(PoliPtr *otro);
+	PoliPtr *resta(PoliPtr *otro);
+	string toStr();
+};
+#endif

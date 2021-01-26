@@ -1,0 +1,282 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "MatrizPtrDb.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+MatrizPtrDb::MatrizPtrDb() {
+	ptrMat = NULL;
+	df = 0;
+	dc = 0;
+	rep = 0;
+}
+
+void MatrizPtrDb::dimensionar(int f, int c) {
+	df = f;
+	dc = c;
+}
+
+int MatrizPtrDb::dimension_fila() {
+	return df;
+}
+
+int MatrizPtrDb::dimension_columna() {
+	return dc;
+}
+
+NodoFil* MatrizPtrDb::existe_fil(int f) {
+	NodoFil* aux = ptrMat;
+	while (aux != NULL) {
+		if (aux->fil == f)
+			return aux;
+		aux = aux->sigF;
+	}
+	return NULL;
+}
+
+NodoCol* MatrizPtrDb::existe_col(NodoFil* f, int c) {
+	if (f == NULL)
+		return NULL;
+	NodoCol* aux = f->ptrCol;
+	while (aux != NULL) {
+		if (aux->col == c)
+			return aux;
+		aux = aux->sigC;
+	}
+	return NULL;
+}
+
+void MatrizPtrDb::insertar_fila(NodoFil* nf) {
+	if (ptrMat == NULL) {
+		ptrMat = nf;
+	}
+	else {
+		NodoFil* aux = ptrMat;
+		NodoFil* antSiFinaliza;
+		while (aux != NULL) {
+			antSiFinaliza = aux;
+			if (nf->fil < aux->fil) {
+				if (aux == ptrMat) {
+					ptrMat == nf;
+					nf->antF = NULL;
+					nf->sigF = aux;
+					aux->antF = nf;
+				}
+				else {
+					NodoFil* ant = aux->antF;
+					ant->sigF = nf;
+					aux->antF = nf;
+					nf->antF = ant;
+					nf->sigF = aux;
+				}
+				return;
+			}
+			aux = aux->sigF;
+		}
+		// Inserta al final
+		antSiFinaliza->sigF = nf;
+		nf->antF = antSiFinaliza;
+		nf->sigF = NULL;
+
+	}
+}
+
+void MatrizPtrDb::insertar_col(NodoFil* nf, NodoCol* nc) {
+	if (nf->ptrCol == NULL) {
+		nf->ptrCol = nc;
+	}
+	else {
+		nc->sigC = nf->ptrCol;
+		nf->ptrCol = nc;
+	}
+}
+
+NodoCol* MatrizPtrDb::anterior(NodoFil* nf, NodoCol* p) {
+	if (p == nf->ptrCol) {
+		return NULL;
+	}
+	else {
+		NodoCol* x = nf->ptrCol;
+		NodoCol* ant = NULL;
+		while (x != NULL) {
+			if (x == p) {
+				return ant;
+			}
+			ant = x;
+			x = x->sigC;
+		}
+	}
+}
+
+void MatrizPtrDb::suprime(NodoFil* nf, NodoCol* p) {
+	if (p == nf->ptrCol) {
+		NodoCol* x = nf->ptrCol;
+		nf->ptrCol = nf->ptrCol->sigC;
+		delete(x);
+	}
+	else {
+		NodoCol* ant = anterior(nf, p);
+		ant->sigC = p->sigC;
+		delete(p);
+	}
+	if (nf->ptrCol == NULL) {
+		if (nf == ptrMat) {
+			ptrMat = ptrMat->sigF;
+			ptrMat->antF = NULL;
+			delete(nf);
+		}
+		else {
+			NodoFil* ant = nf->antF;
+			NodoFil* sig = nf->sigF;
+			ant->sigF = sig;
+			if (sig != NULL)
+				sig->antF = ant;
+			delete(nf);
+		}
+	}
+}
+
+void MatrizPtrDb::poner(int f, int c, int valor) {
+	if (f > 0 && f <= df) {
+		if (c > 0 && c <= dc) {
+			NodoFil* fila = existe_fil(f);
+			if (fila != NULL) {
+				NodoCol* col = existe_col(fila, c);
+				if (col == NULL && valor != rep) {
+					NodoCol* nuevaCol = new NodoCol;
+					nuevaCol->col = c;
+					nuevaCol->dato = valor;
+					nuevaCol->sigC = NULL;
+					insertar_col(fila, nuevaCol);
+					nt++;
+				}
+				else {
+					if (valor == rep) {
+						suprime(fila, col);
+						nt--;
+					}
+					else
+						col->dato = valor;
+				}
+			}
+			else {
+				if (valor != rep) {
+					NodoFil* nuevoFil = new NodoFil;
+					nuevoFil->fil = f;
+					nuevoFil->sigF = NULL;
+					nuevoFil->antF = NULL;
+					nuevoFil->ptrCol = NULL;
+					insertar_fila(nuevoFil);
+					NodoCol* nuevaCol = new NodoCol;
+					nuevaCol->col = c;
+					nuevaCol->dato = valor;
+					nuevaCol->sigC = NULL;
+					insertar_col(nuevoFil, nuevaCol);
+					nt++;
+				}
+			}
+			return;
+		}
+	}
+	cout << "ERROR DE RANGO\n";
+}
+
+int MatrizPtrDb::elemento(int f, int c) {
+	if (f > 0 && f <= df) {
+		if (c > 0 && c <= dc) {
+			NodoFil* fila = existe_fil(f);
+			NodoCol* col = existe_col(fila, c);
+			if (fila != NULL && col != NULL) {
+				return col->dato;
+			}
+			else {
+				return rep;
+			}
+		}
+	}
+	cout << "ERROR DE RANGO\n";
+}
+
+void MatrizPtrDb::definir_valor_repetido(int r) {
+	bool vacio = nt == 0;
+	bool sinRep = true;
+	NodoFil* aux = ptrMat;
+	while (aux != NULL && sinRep == true) {
+		NodoCol* col = aux->ptrCol;
+		while (col != NULL) {
+			if (col->dato == r) {
+				sinRep = false;
+				break;
+			}
+			col = col->sigC;
+		}
+		aux = aux->sigF;
+	}
+	if (vacio || sinRep) {
+		rep = r;
+	}
+	else {
+		for (int i = 0; i < df; i++) {
+			for (int j = 0; j < dc; j++) {
+				int e = elemento(i + 1, j + 1);
+				if (e == rep) {
+					NodoFil* fila = existe_fil(i + 1);
+					NodoCol* col = existe_col(fila, j + 1);
+					if (fila == NULL) {
+						NodoFil* nuevoFil = new NodoFil;
+						nuevoFil->fil = i + 1;
+						nuevoFil->sigF = NULL;
+						nuevoFil->antF = NULL;
+						nuevoFil->ptrCol = NULL;
+						insertar_fila(nuevoFil);
+						NodoCol* nuevaCol = new NodoCol;
+						nuevaCol->col = j + 1;
+						nuevaCol->dato = e;
+						nuevaCol->sigC = NULL;
+						insertar_col(nuevoFil, nuevaCol);
+						nt++;
+					}
+					else {
+						NodoCol* nuevaCol = new NodoCol;
+						nuevaCol->col = j + 1;
+						nuevaCol->dato = valor;
+						nuevaCol->sigC = NULL;
+						insertar_col(nuevoFil, nuevaCol);
+						nt++;
+					}
+				}
+			}
+		}
+		aux = ptrMat;
+		while (aux != NULL) {
+			NodoCol* col = aux->ptrCol;
+			while (col != NULL) {
+				if (col->dato == r) {
+					NodoCol* sup = col;
+					col = col->sigC;
+					suprime(sup);
+					nt--;
+				}
+				else
+					col = col->sigC;
+			}
+			aux = aux->sigF;
+		}
+	}
+}
+
+string MatrizPtrDb::toStr() {
+	string r = "";
+	for (int i = 0; i < df; i++) {
+		r += "|";
+		for (int j = 0; j < dc; j++) {
+			r += to_string(elemento(i + 1, j + 1));
+			if (j < dc - 1)
+				r += "	";
+		}
+		r += "|\n";
+	}
+	return r;
+}

@@ -1,0 +1,81 @@
+#include <iostream>
+#include "ColaLista.h"
+#include "ColaVector1.h"
+#include "ColaVector2.h"
+#include "ColaVector3.h"
+#include "ColaPtr.h"
+#include "ColaSm.h"
+#include "ColaStr.h"
+#include "ColaPila.h"
+#include "ColadePrioridad.h"
+#include "DicolaCola.h";
+#include "DicolaPila.h";
+
+using namespace std;
+
+void menu();
+
+/* Implementar una cola utilizando un atributo p de tipo Pila */
+/* Implementar una cola utilizando un atributo s de tipo string */
+int main() {
+	menu();
+	system("pause");
+	return 0;
+}
+
+void menu() {
+	CSMemoria* m = new CSMemoria();
+	ColadePrioridad* cola;
+	int opcion;
+	do {
+		cout << "1.Crear Cola Crioridad\n";
+		cout << "2.Definir frecuencia de atencion\n";
+		cout << "3.Poner en la cola\n";
+		cout << "4.Sacar de la cola\n";
+		cout << "5.Mostrar Memoria\n";
+		cout << "6.Mostrar Cola\n";
+		cout << "7.Salir\n";
+		cout << "Opcion: ";
+		cin >> opcion;
+		if (opcion == 1)
+			cola = new ColadePrioridad(m);
+		else if (opcion == 2) {
+			int nroCola, frec;
+			cout << "Escoja que cola 1,2 o 3:";
+			cin >> nroCola;
+			cout << "Frecuencia:";
+			cin >> frec;
+			if (nroCola >= 1 && nroCola <= maxCP)
+				cola->frecuencia_prioridad(frec, nroCola - 1);
+		}
+		else if (opcion == 3) {
+			int nroCola, cliente;
+			cout << "Escoja que cola 1,2 o 3:";
+			cin >> nroCola;
+			cout << "Cliente:";
+			cin >> cliente;
+			if (nroCola >= 1 && nroCola <= maxCP)
+				cola->poner(cliente, nroCola - 1);
+		}
+		else if (opcion == 4) {
+			int cliente;
+			if (!cola->vacia()) {
+				cola->sacar(cliente);
+				cout << "Le toca al cliente: " << cliente << endl;
+			}
+			else
+				cout << "No hay clientes en la cola" << endl;
+		}
+		else if (opcion == 5)
+			m->mostrar_memoria();
+		else if (opcion == 6)
+			cout << cola->toStr() << endl;
+		else if (opcion == 7)
+			cout << "Saliendo...\n";
+		else
+			cout << "Elija una opcion valida\n";
+		system("pause");
+		system("cls");
+	}
+	while (opcion != 7);
+}

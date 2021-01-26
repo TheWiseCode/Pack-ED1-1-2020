@@ -1,0 +1,163 @@
+#include <iostream>
+#include "UConjuntoV.h"
+#include "UConjuntoPtr.h"
+#include "UConjuntoSm.h"
+#include "UConjuntoListaPtr.h"
+#include "UConjuntoLista.h"
+#include "Menus.h"
+
+using namespace std;
+
+void complemento_interseccion(ConjuntoPtr* a, ConjuntoPtr* b, ConjuntoPtr* &c) {
+	ConjuntoPtr *ayuda = new ConjuntoPtr();
+	while (!a->vacio()) {
+		int eA = a->muestrea();
+		if (!(a->pertenece(eA) && b->pertenece(eA))) {
+			c->inserta(eA);
+		}
+		a->suprime(eA);
+		ayuda->inserta(eA);
+	}
+	while (!ayuda->vacio()) {
+		int e = ayuda->muestrea();
+		ayuda->suprime(e);
+		a->inserta(e);
+	}
+	while (!b->vacio()) {
+		int eB = b->muestrea();
+		if (!(a->pertenece(eB) && b->pertenece(eB))) {
+			c->inserta(eB);
+		}
+		b->suprime(eB);
+		ayuda->inserta(eB);
+	}
+	while (!ayuda->vacio()) {
+		int e = ayuda->muestrea();
+		ayuda->suprime(e);
+		b->inserta(e);
+	}
+}
+
+void interseccion(ConjuntoListaPtr a, ConjuntoListaPtr b, ConjuntoListaPtr c,
+	ConjuntoListaPtr &cr) {
+	ConjuntoListaPtr aux;
+	while (!cr.vacio()) {
+		int elem = cr.muestrea();
+		cr.suprime(elem);
+	}
+	while (!a.vacio()) {
+		int x = a.muestrea();
+		if (a.pertenece(x) && b.pertenece(x) && c.pertenece(x)) {
+			cr.inserta(x);
+		}
+		a.suprime(x);
+		aux.inserta(x);
+	}
+	while (!aux.vacio()) {
+		int x = aux.muestrea();
+		aux.suprime(x);
+		a.inserta(x);
+	}
+}
+
+void interseccion1(ConjuntoListaPtr a, ConjuntoListaPtr b, ConjuntoListaPtr c, ConjuntoListaPtr &cr) {
+	ConjuntoListaPtr recuperar;
+	while (cr.vacio() == false) {
+		cr.suprime(cr.muestrea());
+	}
+	while (a.vacio() == false) {
+		int x = a.muestrea();
+		if (a.pertenece(x)) {
+            if(b.pertenece(x)){
+                if(c.pertenece(x)){
+			    cr.inserta(x);
+                }
+            }
+		}
+		a.suprime(x);
+		recuperar.inserta(x);
+	}
+	while (recuperar.vacio() == false) {
+		int x = recuperar.muestrea();
+	    recuperar.suprime(x);
+		a.inserta(x);
+	}
+}
+
+/*
+ while(cr.vacio == false){
+ int elem = cr.mustrea();
+ cr.suprime(elem);
+ } */
+int main() {
+	ConjuntoListaPtr a;
+	ConjuntoListaPtr b;
+	ConjuntoListaPtr c;
+	ConjuntoListaPtr cr;
+	a.insertaExamen1(3);
+	a.insertaExamen1(4);
+	a.insertaExamen1(5);
+	a.insertaExamen1(6);
+	//
+	b.insertaExamen1(3);
+	b.insertaExamen1(4);
+	b.insertaExamen1(10);
+	b.insertaExamen1(20);
+	//
+	c.insertaExamen1(3);
+	c.insertaExamen1(10);
+	c.insertaExamen1(11);
+	c.insertaExamen1(20);
+	c.insertaExamen1(4);
+	//
+	cr.inserta(100);
+	cr.inserta(200);
+	interseccion(a, b, c, cr);
+	//
+	cout << a.toStr() << endl;
+	cout << b.toStr() << endl;
+	cout << c.toStr() << endl;
+	cout << cr.toStr() << endl;
+	/*
+	 cout << "1.Conjunto Sm\n";
+	 cout << "2.Conjunto Ptr\n";
+	 cout << "3.Conjunto Vector\n";
+	 cout << "4.Conjunto Listas\n";
+	 cout << "5.Conjunto ListaPtr\n";
+	 cout << "Opcion : ";
+	 int op;
+	 cin >> op;
+	 if (op == 1) {
+	 CSMemoria *m;
+	 ConjuntoSm* a;
+	 ConjuntoSm* b;
+	 ConjuntoSm* c;
+	 MenuSm(m, a, b, c);
+	 }
+	 else if (op == 2) {
+	 ConjuntoPtr* a;
+	 ConjuntoPtr* b;
+	 ConjuntoPtr* c;
+	 MenuPtr(a, b, c);
+	 }
+	 else if (op == 3) {
+	 ConjuntoV* a;
+	 ConjuntoV* b;
+	 ConjuntoV* c;
+	 MenuVector(a, b, c);
+	 }
+	 else if (op == 4) {
+	 ConjuntoLista* a;
+	 ConjuntoLista* b;
+	 ConjuntoLista* c;
+	 MenuLista(a, b, c);
+	 }
+	 else if (op == 5) {
+	 ConjuntoListaPtr* a;
+	 ConjuntoListaPtr* b;
+	 ConjuntoListaPtr* c;
+	 MenuListaPtr(a, b, c);
+	 } */
+	system("pause");
+	return 0;
+}

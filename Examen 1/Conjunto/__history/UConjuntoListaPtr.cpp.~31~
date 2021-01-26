@@ -1,0 +1,88 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UConjuntoListaPtr.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ConjuntoListaPtr::ConjuntoListaPtr() {
+	lista = new ListaPtr();
+}
+
+bool ConjuntoListaPtr::vacio() {
+	return lista->vacia();
+}
+
+int ConjuntoListaPtr::cardinal() {
+	return lista->longitud();
+}
+
+int ConjuntoListaPtr::ordinal(int e) {
+	int c = 0;
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		c++; // empieza en 1
+		if (lista->recupera(aux) == e) {
+			return c;
+		}
+		aux = lista->siguiente(aux);
+	}
+	return -1;
+}
+
+void ConjuntoListaPtr::inserta(int e) {
+	if (!pertenece(e)) {
+		lista->inserta(lista->primero(), e);
+	}
+}
+
+void ConjuntoListaPtr::suprime(int e) {
+	if (pertenece(e)) {
+		NodoL* nodo = lista->localiza(e);
+		lista->suprime(nodo);
+	}
+}
+
+bool ConjuntoListaPtr::pertenece(int e) {
+	NodoL* existe = lista->localiza(e);
+	if (existe == NULL)
+		return false;
+	else
+		return true;
+
+}
+
+int ConjuntoListaPtr::muestrea() {
+	if (!vacio()) {
+		srand(time(NULL));
+		int pos = rand() % cardinal();
+		return elemento(pos);
+	}
+	else
+		return 0;
+}
+
+int ConjuntoListaPtr::elemento(int pos) {
+	int c = 0;
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		if(c == pos){
+			return lista->recupera(aux);
+		}
+		c++;
+		aux = lista->siguiente(aux);
+    }
+}
+
+void ConjuntoListaPtr::reiniciar() {
+}
+
+string ConjuntoListaPtr::toStr() {
+}
+
+void ConjuntoListaPtr::unir(ConjuntoListaPtr *b, ConjuntoListaPtr *c) {
+}
+
+void ConjuntoListaPtr::intersectar(ConjuntoListaPtr *b, ConjuntoListaPtr *c) {
+}

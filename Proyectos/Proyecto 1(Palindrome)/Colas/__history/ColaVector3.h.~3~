@@ -1,0 +1,26 @@
+// ---------------------------------------------------------------------------
+
+#ifndef ColaVector3H
+#define ColaVector3H
+// ---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+using namespace std;
+
+const int maxV3 = 20;
+
+class ColaV2 {
+private:
+	int* v;
+	int ini, fin;
+
+public:
+	ColaV2();
+	bool vacia();
+	void poner(int e);
+	void sacar(int &e);
+	int primero();
+	string toStr();
+};
+#endif

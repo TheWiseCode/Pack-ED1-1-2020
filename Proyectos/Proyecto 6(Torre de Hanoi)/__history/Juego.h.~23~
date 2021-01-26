@@ -1,0 +1,54 @@
+// ---------------------------------------------------------------------------
+
+#ifndef JuegoH
+#define JuegoH
+// ---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <iostream>
+#include <string>
+#include "PilaPtr.h"
+
+using namespace std;
+
+// ---------------------------------------------------------------------------
+class TForm1 : public TForm {
+__published: // IDE-managed Components
+
+	TEdit *Edit1;
+	TLabel *Label1;
+	TButton *Button1;
+	TMemo *Memo1;
+	TMemo *Memo2;
+	TMemo *Memo3;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
+	TEdit *Edit2;
+	TEdit *Edit3;
+	TLabel *Label5;
+	TLabel *Label6;
+
+	void __fastcall Button1Click(TObject *Sender);
+
+private: // User declarations
+
+	int numDiscos;
+	PilaPtr* torreA;
+	PilaPtr* torreB;
+	PilaPtr* torreC;
+
+public: // User declarations
+
+	__fastcall TForm1(TComponent* Owner);
+	String asteriscos(int n);
+	void iniciarPilas();
+	void ponerEnMemo(PilaPtr* pila, TMemo* memo);
+};
+
+// ---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+// ---------------------------------------------------------------------------
+#endif

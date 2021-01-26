@@ -1,0 +1,31 @@
+// ---------------------------------------------------------------------------
+
+#ifndef PilaSmH
+#define PilaSmH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "UMemoria.h"
+
+using namespace std;
+
+const string datosP = "elemento,sig";
+const string elementoP = "->elemento";
+const string sigP = "->sig";
+
+class PilaSm {
+private:
+	int tope;
+    CSMemoria* mem;
+
+public:
+	PilaSm();
+	PilaSm(CSMemoria* m);
+	bool vacia();
+	void meter(int e);
+	void sacar(int &e);
+	int sacar();
+	int cima();
+	void mostrar();
+};
+#endif

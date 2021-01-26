@@ -1,0 +1,161 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "MatrizVector.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+MatrizVector::MatrizVector() {
+	df = 0;
+	dc = 0;
+	rep = 0;
+	nt = 0;
+	vf = new int[df * dc];
+	vc = new int[df * dc];
+	vd = new int[df * dc];
+}
+
+void MatrizVector::dimensionar(int f, int c) {
+	df = f;
+	dc = c;
+	vf = new int[df * dc];
+	vc = new int[df * dc];
+	vd = new int[df * dc];
+}
+
+int MatrizVector::dimension_fila() {
+	return df;
+}
+
+int MatrizVector::dimension_columna() {
+	return dc;
+}
+
+int MatrizVector::numero_casillas_validas() {
+	int c = 0;
+	int n = df * dc;
+	for (int i = 0; i < n; i++) {
+		if (vf[i] == 0)
+			break;
+		c++;
+	}
+	return c;
+}
+
+void MatrizVector::poner(int f, int c, int valor) {
+	if (f > 0 && f <= df) {
+		if (c > 0 && c <= dc) {
+			int pos = posicion(f, c);
+			if (pos == -1 && valor != rep) {
+				vf[nt] = f;
+				vc[nt] = c;
+				vd[nt] = valor;
+				nt++;
+			}
+			else {
+				if (valor == rep) {
+					eliminar_posicion(vd, pos, nt);
+					eliminar_posicion(vf, pos, nt);
+					eliminar_posicion(vc, pos, nt);
+					nt--;
+				}
+				else {
+					vd[pos] = valor;
+				}
+			}
+			return;
+		}
+	}
+	cout << "ERROR DE RANGO\n";
+}
+
+int MatrizVector::posicion(int f, int c) {
+	for (int i = 0; i < nt; i++) {
+		if (vf[i] == f && vc[i] == c)
+			return i;
+	}
+	return -1;
+}
+
+int MatrizVector::elemento(int f, int c) {
+	if (f > 0 && f <= df) {
+		if (c > 0 && c <= dc) {
+			int pos = posicion(f, c);
+			if (pos == -1)
+				return rep;
+			else
+				return vd[pos];
+		}
+	}
+	cout << "ERROR DE RANGO\n";
+}
+
+bool MatrizVector::validar(int rep) {
+	bool vacio = nt == 0;
+	bool repetidos = true;
+	for (int i = 0; i < nt; i++) {
+		if (vd[i] == rep) {
+			repetidos = false;
+			break;
+		}
+	}
+	return vacio || repetidos;
+}
+
+void MatrizVector::definir_valor_repetido(int r) {
+	// Validando
+	bool vacio = nt == 0;
+	bool repetidos = true;
+	for (int i = 0; i < nt; i++) {
+		if (vd[i] == r) {
+			repetidos = false;
+			break;
+		}
+	}
+	if (vacio || repetidos) {
+		rep = r;
+	}
+	else {
+		for (int i = 0; i < df; i++) {
+			for (int j = 0; j < dc; j++) {
+				int e = elemento(i + 1, j + 1);
+				if (e == rep) {
+					// meto los q no estaban
+					vf[nt] = i + 1;
+					vc[nt] = j + 1;
+					vd[nt] = e;
+					nt = nt + 1;
+				}
+			}
+		}
+		for (int i = 0; i < nt; i++) {
+			if (vd[i] == r) {
+				int pos = i;
+				for (int j = pos; j < nt - 1; j++) {
+					vd[j] = vd[j + 1];
+					vf[j] = vd[j + 1];
+					vc[j] = vd[j + 1];
+				}
+				i = i - 1;
+				nt = nt - 1;
+			}
+		}
+		rep = r;
+	}
+}
+
+string MatrizVector::toStr() {
+	cout << nt << endl;
+	string r = "";
+	for (int i = 0; i < df; i++) {
+		r += "|";
+		for (int j = 0; j < dc; j++) {
+			r += to_string(elemento(i + 1, j + 1));
+			if (j < dc - 1)
+				r += "	";
+		}
+		r += "|\n";
+	}
+	return r;
+}

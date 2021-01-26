@@ -1,0 +1,70 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ColadePrioridad.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ColadePrioridad::ColadePrioridad() {
+	colaActual = 0;
+	cant = 0;
+	vc = new ColaPtr[maxCP];
+	vf = new int[maxCP];
+	for (int i = 0; i < maxCP; i++) {
+		// vc[i] = new ColaPtr();
+		vf[i] = 1;
+	}
+}
+
+bool ColadePrioridad::vacia() {
+	for (int i = 0; i < maxCP; i++) {
+		if (!vc[i].vacia()) {
+			return false;
+		}
+	}
+	return true;
+}
+
+int ColadePrioridad::primero() {
+	if (!vc[colaActual].vacia()) {
+		return vc[colaActual].primero();
+	}
+}
+
+void ColadePrioridad::poner(int e, int prior) {
+	vc[prior].poner(e);
+}
+
+void ColadePrioridad::frecuencia_prioridad(int f, int p) {
+	vf[p] = f;
+}
+
+void ColadePrioridad::sacar(int& e) {
+	if (!vacia()) {
+		if (!vc[colaActual].vacia()) {
+			if (cant < vf[colaActual]) {
+				cant++;
+				vc[colaActual].sacar(e);
+				if (cant == vf[colaActual]) {
+					colaActual = (colaActual + 1) % maxCP;
+					cant = 0;
+				}
+			}
+		}
+	}
+	else {
+		colaActual = (colaActual + 1) % maxCP;
+		cant = 0;
+		return sacar(e);
+	}
+}
+}
+
+string ColadePrioridad::toStr() {
+string r = "";
+for (int i = 0; i < maxCP; i++) {
+	r += vc[i].toStr() + "\n";
+}
+return r;
+}

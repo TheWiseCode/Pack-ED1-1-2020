@@ -1,0 +1,18 @@
+#include <iostream>
+#include "Menus.h"
+#include "UMemoria.h";
+#include "UConjuntoSm.h"
+#include "UPoliSm.h"
+
+using namespace std;
+
+int main() {
+	CSMemoria *m;
+	ConjuntoSm *a;
+	ConjuntoSm *b;
+	ConjuntoSm *c;
+	PoliSm *p;
+	menu1(m, a, b, c, p);
+	system("pause");
+	return 0;
+}

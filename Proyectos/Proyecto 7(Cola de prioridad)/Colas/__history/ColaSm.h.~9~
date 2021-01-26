@@ -1,0 +1,32 @@
+// ---------------------------------------------------------------------------
+
+#ifndef ColaSmH
+#define ColaSmH
+// ---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+#include "UMemoria.h"
+using namespace std;
+
+const string elementoC = "->elemento";
+const string sigC = "->sig";
+const string datosC = "elemento,sig";
+
+typedef int direccion;
+
+class ColaPtr {
+private:
+	direccion ini;
+	direccion fin;
+
+public:
+	ColaPtr();
+	bool vacia();
+	void poner(int e);
+	void sacar(int &e);
+	int primero();
+	string toStr();
+};
+
+#endif

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/06/27 18:28:28.000.284,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/06/27 18:28:28.000.355,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/06/27 18:29:04.000.498,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\TDA_ListaPCH1.h</Transaction>
+    <Transaction>2020/06/27 18:29:04.000.563,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\TDA_Lista.cbproj</Transaction>
+    <Transaction>2020/06/27 18:29:25.000.141,C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\File1.cpp</Transaction>
+    <Transaction>2020/06/27 18:29:27.000.481,C:\Users\pc\Documents\Embarcadero\Studio\Projects\TDA_ListaPCH1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\TDA_ListaPCH1.h</Transaction>
+    <Transaction>2020/06/27 18:29:29.000.384,C:\Users\pc\Documents\Embarcadero\Studio\Projects\TDA_Lista.cbproj=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\TDA_Lista.cbproj</Transaction>
+    <Transaction>2020/06/27 18:30:05.000.090,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp</Transaction>
+    <Transaction>2020/06/27 18:30:26.000.849,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/06/27 18:30:26.000.849,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\ListaVector.h</Transaction>
+    <Transaction>2020/06/27 19:41:36.000.683,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp</Transaction>
+    <Transaction>2020/06/27 19:41:44.000.199,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/06/27 19:41:44.000.199,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\ListaPtr.h</Transaction>
+    <Transaction>2020/06/27 20:36:57.000.401,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp</Transaction>
+    <Transaction>2020/06/27 20:37:02.000.912,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/06/27 20:37:02.000.912,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\ListaSm.h</Transaction>
+    <Transaction>2020/06/27 20:39:43.000.899,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\UMemoria.cpp</Transaction>
+    <Transaction>2020/06/27 21:49:37.000.103,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp</Transaction>
+    <Transaction>2020/06/27 21:49:48.000.124,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Funciones.h</Transaction>
+    <Transaction>2020/06/27 21:49:48.000.124,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Listas\Funciones.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

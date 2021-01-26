@@ -1,0 +1,64 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ColaVector1.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ColaV1::ColaV1() {
+	v = new int[maxVC];
+	ini = 0;
+	fin = 0;
+}
+
+bool ColaV1::vacia() {
+	return ini == fin;
+}
+
+void ColaV1::poner(int e) {
+	if (fin < maxVC) {
+		v[fin] = e;
+		fin++;
+	}
+}
+
+void ColaV1::sacar(int &e) {
+	if (!vacia()) {
+		e = v[ini];
+		ini++;
+	}
+}
+
+int ColaV1::primero() {
+	if (!vacia()) {
+		return v[ini];
+	}
+}
+
+string ColaV1::toStr() {
+	/* ColaV1* aux = new ColaV1();
+	 string s = "<<";
+	 while (!vacia()) {
+	 int e;
+	 sacar(e);
+	 aux->poner(e);
+	 s = s + to_string(e);
+	 if (!vacia())
+	 s = s + ",";
+	 }
+	 s = s + "<<";
+	 while (!aux->vacia()) {
+	 int e;
+	 aux->sacar(e);
+	 poner(e);
+	 }
+	 return s; */
+	string s = "";
+	for (int i = ini; i < fin; i++) {
+		s += to_string(v[i]);
+		if (i < fin - 1)
+			s += ",";
+	}
+	return s;
+}

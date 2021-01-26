@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColaStrH
+#define ColaStrH
+//---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+using namespace std;
+#endif

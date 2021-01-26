@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#ifndef MenusH
+#define MenusH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+
+#include "UMemoria.h";
+#include "UConjuntoSm.h"
+#include "UPoliSm.h"
+
+using namespace std;
+
+void menu1(CSMemoria *m, ConjuntoSm *a, ConjuntoSm *b, ConjuntoSm* c, PoliSm* p);
+void lineas();
+#endif

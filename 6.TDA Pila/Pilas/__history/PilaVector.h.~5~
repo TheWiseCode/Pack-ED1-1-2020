@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef PilaVectorH
+#define PilaVectorH
+//---------------------------------------------------------------------------
+const int maxPila = 100;
+
+class PilaVector{
+	private:
+		int* elementos;
+		int tope;
+	public:
+		PilaVector();
+		bool vacia();
+		void meter(int e);
+		void sacar(int &e);
+		int sacar();
+		int cima();
+};
+#endif

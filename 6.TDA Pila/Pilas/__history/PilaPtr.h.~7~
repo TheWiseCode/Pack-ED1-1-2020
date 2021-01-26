@@ -1,0 +1,29 @@
+// ---------------------------------------------------------------------------
+
+#ifndef PilaPtrH
+#define PilaPtrH
+// ---------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+struct NodoPila {
+	int elemento;
+	NodoPila* sig;
+};
+
+class PilaPtr {
+private:
+	NodoPila* tope;
+
+public:
+	PilaPtr();
+	bool vacia();
+	void meter(int e);
+	void sacar(int &e);
+	int sacar();
+	int cima();
+	void mostrar();
+};
+
+#endif

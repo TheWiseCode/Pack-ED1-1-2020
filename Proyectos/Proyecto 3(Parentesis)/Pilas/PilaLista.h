@@ -1,0 +1,28 @@
+// ---------------------------------------------------------------------------
+
+#ifndef PilaListaH
+#define PilaListaH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include "ListaVector.h"
+#include "ListaSm.h"
+
+using namespace std;
+
+class PilaLista {
+private:
+	ListaVector *l;
+
+public:
+	PilaLista();
+	bool vacia();
+	void meter(int e);
+	void sacar(int &e);
+	int sacar();
+	int cima();
+	void mostrar();
+	void meter1(int e);
+	void sacar1(int &e);
+	void mostrarLista();
+};
+#endif

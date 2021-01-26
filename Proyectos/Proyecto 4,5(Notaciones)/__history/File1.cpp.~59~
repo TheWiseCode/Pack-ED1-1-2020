@@ -1,0 +1,143 @@
+#include <iostream>
+#include <string>
+#include "PilaPtr.h"
+
+using namespace std;
+
+string postfija(string exp);
+string prefija(string exp);
+
+int main() {
+	string ex1 = "(a+b)*(c+d)";
+	string ex2 = "(a*b)+(c*d)";
+	string ex3 = "a+b*c+d";
+	string exp = "a+b*(a*c+a*(x^y)-t%e)-f*g";
+	string post = postfija(exp);
+	cout << exp << endl;
+	cout << post << endl;
+	system("pause");
+	return 0;
+}
+
+bool esOperador(char c) {
+	string op = "+-%*/^";
+	int pos = op.find_first_of(c);
+	return pos >= 0;
+}
+
+int prioridad(char operador) {
+	switch (operador) {
+	case '^':
+		return 5;
+	case '*':
+	case '/':
+		return 4;
+	case '%':
+		return 3;
+	case '+':
+	case '-':
+		return 2;
+	case '(':
+	case ')':
+		return 1;
+	}
+	return 0;
+}
+
+string postfija(string exp) {
+	PilaPtr pila;
+	string res = "";
+	for (int i = 0; i < exp.length(); i++) {
+		char c = exp[i];
+		if (c == '(')
+			pila.meter(c);
+		else if (c == ')') {
+			int s;
+			while (pila.cima() != '(') {
+				pila.sacar(s);
+				res += s;
+			}
+			pila.sacar(s);
+		}
+		else if (!esOperador(c)) // si es letra
+				res += c;
+		else {
+			while (!pila.vacia() && prioridad(c) < prioridad(pila.cima())) {
+				int s;
+				pila.sacar(s);
+				res += s;
+			}
+			pila.meter(c);
+		}
+	}
+	while (!pila.vacia()) {
+		int s;
+		pila.sacar(s);
+		res += s;
+	}
+	return res;
+}
+
+/*
+ RECORRER LA EXPRESION
+ DESDE EL ULTIMO AL PRIMERO
+ si c == ')'
+ meter a la pila c
+ o si c == '('
+ mientras q la cima de la pila != ')'
+ añado a res lo q saco de la pila
+ saco de la pila//siempre sale ')'
+ o si esLetra(c)
+ añado a res esa letra
+ o si es esOperador(c)
+ //osea hasta que vaciar la pila
+ mientras que la pila no este vacia y tambien
+ q prioridad(c) < prioridad(pila.cima())
+ añadir a res lo que saco de la pila
+ meter a la pila c
+
+ mientras que la no este vacia
+ añado a res lo que saco de la pila
+ INVERTIR RES Y RETORNAR
+ */
+
+string invertido(string s) {
+	string r = "";
+	for (int i = 0; i < s.length(); i++)
+		r = s[i] + r;
+	return r;
+}
+
+string prefija(string exp) {
+	PilaPtr pila;
+	string res = "";
+	for (int i = exp.length() - 1; i >= 0; i--) {
+		char c = exp[i];
+		if (c == ')')
+			pila.meter(c);
+		else if (c == '(') {
+			int s;
+			while (pila.cima() != ')') {
+				pila.sacar(s);
+				res += s;
+			}
+			pila.sacar(s);
+		}
+		else if (!esOperador(c)) // es letra
+				res += c;
+		else {
+			while (!pila.vacia() && prioridad(c) < prioridad(pila.cima())) {
+				int s;
+				pila.sacar(s);
+				res += s;
+			}
+			pila.meter(c);
+		}
+	}
+	while (!pila.vacia()) {
+		int s;
+		pila.sacar(s);
+		res += s;
+	};
+	return invertido(res);
+}

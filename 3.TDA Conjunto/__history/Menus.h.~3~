@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#ifndef MenusH
+#define MenusH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include "UConjuntoV.h"
+#include "UConjuntoPtr.h"
+#include "UConjuntoSm.h"
+#include "UConjuntoListaPtr.h"
+#include "UConjuntoLista.h"
+
+using namespace std;
+
+
+void prueba();
+
+
+#endif

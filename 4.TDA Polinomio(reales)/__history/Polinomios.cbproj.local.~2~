@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/07/11 18:40:21.000.703,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/07/11 18:40:21.000.629,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/07/11 18:40:58.000.568,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Polinomios.cbproj</Transaction>
+    <Transaction>2020/07/11 18:40:58.000.560,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PolinomiosPCH1.h</Transaction>
+    <Transaction>2020/07/11 18:41:33.000.324,C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\File1.cpp</Transaction>
+    <Transaction>2020/07/11 18:41:36.000.635,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PolinomiosPCH1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PolinomiosPCH1.h</Transaction>
+    <Transaction>2020/07/11 18:41:39.000.586,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Polinomios.cbproj=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Polinomios.cbproj</Transaction>
+    <Transaction>2020/07/11 18:42:24.000.238,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/11 18:42:31.000.443,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.cpp</Transaction>
+    <Transaction>2020/07/11 18:42:31.000.443,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.h</Transaction>
+    <Transaction>2020/07/11 18:43:05.000.736,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliVector.h</Transaction>
+    <Transaction>2020/07/11 18:43:05.000.736,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliVector.cpp</Transaction>
+    <Transaction>2020/07/11 19:47:03.000.519,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Funciones.cpp</Transaction>
+    <Transaction>2020/07/11 19:53:41.635,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/11 19:53:47.055,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliPtr.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h</Transaction>
+    <Transaction>2020/07/11 19:53:47.055,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliPtr.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

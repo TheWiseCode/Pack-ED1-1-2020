@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/10/07 16:12:29.000.949,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 16:12:30.000.164,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/10/07 17:48:14.664,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 17:48:14.677,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/07 17:48:39.556,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 17:48:39.560,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/10/07 17:48:53.135,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/07 17:48:55.579,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Project2PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2020/10/07 17:48:57.700,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Project2.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+    <Transaction>2020/10/07 17:51:25.045,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:25.104,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:25.132,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:31.902,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:31.919,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:37.844,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Pilas\PilaLista.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:37.866,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Pilas\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:37.892,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Pilas\PilaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:37.925,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Pilas\PilaSm.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:37.943,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Pilas\PilaStr.cpp</Transaction>
+    <Transaction>2020/10/07 17:51:37.988,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 2(Suma fuera de rango)\Pilas\PilaVector.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

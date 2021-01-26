@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/06/20 18:28:15.000.959,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/06/20 18:28:16.000.037,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/06/20 18:29:57.000.226,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/06/20 18:30:01.000.009,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/06/20 18:30:03.000.555,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/06/20 18:30:22.000.677,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Simulador_memoriaPCH1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Project1PCH1.h</Transaction>
+    <Transaction>2020/06/20 18:30:22.000.708,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Simulador_memoria.cbproj=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Project1.cbproj</Transaction>
+    <Transaction>2020/06/20 18:32:23.000.396,=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Unit1.cpp</Transaction>
+    <Transaction>2020/06/20 18:34:35.000.024,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UMemoria.h=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Unit1.h</Transaction>
+    <Transaction>2020/06/20 18:34:35.000.024,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UMemoria.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Unit1.cpp</Transaction>
+    <Transaction>2020/07/12 15:10:28.000.697,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UnidadMemoria.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UMemoria.cpp</Transaction>
+    <Transaction>2020/07/12 15:10:28.000.697,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UnidadMemoria.h=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UMemoria.h</Transaction>
+    <Transaction>2020/07/12 15:10:46.000.576,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UMemoria.h=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UnidadMemoria.h</Transaction>
+    <Transaction>2020/07/12 15:10:46.000.576,C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UMemoria.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\UnidadMemoria.cpp</Transaction>
+    <Transaction>2020/07/25 20:57:50.000.725,=C:\Users\pc\Desktop\Aux ED1 1-2020\1.Memoria\Funciones.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

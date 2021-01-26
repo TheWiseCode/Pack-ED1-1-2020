@@ -1,0 +1,73 @@
+#include <iostream>
+#include <string>
+// #include <conio.h> //gotoxy(x,y); y clrscr();
+#include "UMemoria.h"
+
+using namespace std;
+
+void menu(CSMemoria *mem);
+
+int main() {
+	CSMemoria *mem = new CSMemoria();
+	int d1, d2;
+	d1 = mem->new_espacio(" ");
+	d2 = mem->new_espacio(" , ");
+	mem->delete_espacio(d1);
+	// CSMemoria *mem = new CSMemoria();
+	// menu(mem);
+	system("pause");
+
+	return 0;
+}
+
+void menu(CSMemoria *mem) {
+	cout << "1.Crear\n";
+	cout << "2.Pedir espacio\n";
+	cout << "3.Liberar espacio\n";
+	cout << "4.Poner dato\n";
+	cout << "5.Mostrar memoria\n";
+	cout << "6.Salir\n";
+	int opcion;
+	cout << "Elija una opcion : ";
+	cin >> opcion;
+	switch (opcion) {
+	case 1: {
+			mem = new CSMemoria();
+		} break;
+	case 2: {
+			string ids;
+			cout << "Ingrese los ids : ";
+			cin.ignore();
+			getline(cin, ids);
+			mem->new_espacio(ids);
+		} break;
+	case 3: {
+			int dir;
+			cout << "Direccion para liberar espacio : ";
+			cin >> dir;
+			mem->delete_espacio(dir);
+			cout << "Espacio liberado\n";
+		} break;
+	case 4: {
+			// poner_dato(direccion_mem dir, string id, int valor)
+			int dir;
+			cout << "Direccion a buscar : ";
+			cin >> dir;
+			string id;
+			cout << "Id a cambiar valor : ";
+			cin.ignore();
+			getline(cin, id);
+			int valor;
+			cout << "Valor a cambiar : ";
+			cin >> valor;
+			mem->poner_dato(dir, id, valor);
+			cout << "Dato cambiado";
+		} break;
+	case 5: {
+			mem->mostrar_memoria();
+		} break;
+	}
+	if (opcion != 6) {
+		menu(mem);
+	}
+}

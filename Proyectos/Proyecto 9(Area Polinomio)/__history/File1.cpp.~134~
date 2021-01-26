@@ -1,0 +1,64 @@
+#include <iostream>
+#include "UPoliVector.h"
+#include "UPoliPtr.h"
+#include "UPoliSm.h"
+#include "UPoliListaPtr.h"
+#include "UPoliListaSm.h"
+#include "UMemoria.h"
+#include "Menus.h"
+
+using namespace std;
+
+void menu();
+
+int main() {
+	menu();
+	system("pause");
+	return 0;
+}
+
+/*
+ 1) Crear
+ 2) poner termino
+ 3) Grado Polinomio
+ 4) Derivada
+ 5) Área en intervalo a,b
+ 8) Mostrar Polinomio */
+void menu() {
+	PoliPtr* p;
+	int opcion;
+	do {
+		cout << "1) Crear" << endl;
+		cout << "2) Poner Termino" << endl;
+		cout << "3) Grado polinomio" << endl;
+		cout << "4) Derivada" << endl;
+		cout << "5) Area en intervalo a,b" << endl;
+		cout << "6) Mostrar Polinomio" << endl;
+		cout << "7) Salir" << endl;
+		cout << "Opcion: " << endl;
+		cin >> opcion;
+		switch (opcion) {
+		case 1:
+			p = new PoliPtr();
+			break;
+		case 2: {
+				int e, c;
+				cout << "Coeficiente: ";
+				cin >> c;
+				cout << "Exponente: ";
+				cin >> e;
+			} break;
+		case 1: {
+			} break;
+		case 1: {
+			} break;
+		case 1: {
+			} break;
+		case 1: {
+			} break;
+		case 1: {
+			} break;
+		};
+	}
+	while ();
+}

@@ -1,0 +1,66 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "DicolaPila.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+DicolaV::DicolaV() {
+	K = new PilaVector();
+}
+
+void Dicola::poner(int e) {
+	Pila* aux = new Pila();
+	while (!K->Vacia()) {
+		int d;
+		K->Sacar(d);
+		aux->Meter(d);
+	}
+	K->Meter(e);
+	while (!aux->Vacia()) {
+		int d;
+		aux->Sacar(d);
+		K->Meter(d);
+	}
+}
+
+void Dicola::Poner_Frente(int e) {
+	K->Meter(e);
+}
+
+void Dicola::sacar(int& e) {
+	if (!vacia()) {
+		K->Sacar(e);
+	}
+}
+
+bool DicolaV::vacia() {
+	return K->vacia();
+}
+
+int DicolaV::primero() {
+	if (!vacia()) {
+		return K->cima();
+	}
+}
+
+string DicolaV::toStr() {
+	DicolaV* aux = new DicolaV();
+	string s = "<<";
+	while (!vacia()) {
+		int e;
+		sacar(e);
+		aux->poner(e);
+		s = s + to_string(e);
+		if (!vacia())
+			s = s + ",";
+	}
+	s = s + "<<";
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar(e);
+		poner(e);
+	}
+	return s;
+}

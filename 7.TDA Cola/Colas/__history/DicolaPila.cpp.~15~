@@ -1,0 +1,102 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "DicolaPila.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+DicolaV::DicolaV() {
+	K = new PilaVector();
+}
+
+void DicolaV::poner(int e) {
+	PilaVector* aux = new PilaVector();
+	while (!K->vacia()) {
+		int s;
+		K->sacar(s);
+		aux->meter(s);
+	}
+	K->meter(e);
+	while (!aux->vacia()) {
+		int s;
+		aux->sacar(s);
+		K->meter(s);
+	}
+}
+
+void DicolaV::poner_frente(int e) {
+	K->meter(e);
+}
+
+void DicolaV::sacar(int& e) {
+	if (!vacia()) {
+		K->sacar(e);
+	}
+}
+
+void DicolaV::poner1(int e) {
+	K->meter(e);
+}
+
+void DicolaV::poner_frente1(int e) {
+	PilaVector* aux = new PilaVector();
+	while (!K->vacia()) {
+		int x;
+		K->sacar(x);
+		aux->meter(x);
+	}
+	K->meter(e);
+	while (!aux->vacia()) {
+		int x;
+		aux->sacar(x);
+		K->meter(x);
+	}
+}
+
+void DicolaV::sacar1(int& e) {
+	if (!vacia()) {
+		PilaVector* aux = new PilaVector();
+		while (!K->vacia()) {
+			int x;
+			K->sacar(x);
+			aux->meter(x);
+		}
+		aux->sacar(ret);
+		while (!aux->vacia()) {
+			int x;
+			aux->sacar(x);
+			K->meter(x);
+		}
+	}
+}
+
+bool DicolaV::vacia() {
+	return K->vacia();
+}
+
+int DicolaV::primero() {
+	if (!vacia()) {
+		return K->cima();
+	}
+}
+
+string DicolaV::toStr() {
+	DicolaV* aux = new DicolaV();
+	string s = "<<";
+	while (!vacia()) {
+		int e;
+		sacar1(e);
+		aux->poner1(e);
+		s = s + to_string(e);
+		if (!vacia())
+			s = s + ",";
+	}
+	s = s + "<<";
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar1(e);
+		poner1(e);
+	}
+	return s;
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/09 16:48:43.000.505,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/09/09 16:48:43.000.432,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/09/09 16:49:16.000.019,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPil.cbproj</Transaction>
+    <Transaction>2020/09/09 16:49:16.000.016,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPilPCH1.h</Transaction>
+    <Transaction>2020/09/09 16:49:18.000.526,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPilPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPilaPCH1.h</Transaction>
+    <Transaction>2020/09/09 16:49:18.000.531,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPil.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPila.cbproj</Transaction>
+    <Transaction>2020/09/09 16:49:32.000.767,C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\File1.cpp</Transaction>
+    <Transaction>2020/09/09 16:49:36.000.530,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPilaPCH1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PPilaPCH1.h</Transaction>
+    <Transaction>2020/09/09 16:49:38.000.475,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PPila.cbproj=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PPila.cbproj</Transaction>
+    <Transaction>2020/09/09 16:50:52.000.763,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/09 16:50:58.000.709,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaVector.h</Transaction>
+    <Transaction>2020/09/09 16:50:58.000.709,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaVector.cpp</Transaction>
+    <Transaction>2020/09/09 16:51:05.000.328,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaVector.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaVector.h</Transaction>
+    <Transaction>2020/09/09 16:51:05.000.328,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaVector.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaVector.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:21.000.670,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:32.000.687,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:32.000.687,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaListaPtr.h</Transaction>
+    <Transaction>2020/09/09 17:14:38.000.647,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaListaPtr.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:38.000.647,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\PilaListaPtr.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaListaPtr.h</Transaction>
+    <Transaction>2020/09/09 17:14:50.000.876,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:50.000.994,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:50.000.947,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:59.000.804,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/09/09 17:14:59.000.872,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/09/09 17:25:29.000.846,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/09 17:25:42.000.603,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaLista.cpp</Transaction>
+    <Transaction>2020/09/09 17:25:42.000.603,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaLista.h</Transaction>
+    <Transaction>2020/09/09 17:45:33.000.016,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/09 17:45:43.000.438,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaPtr.h</Transaction>
+    <Transaction>2020/09/09 17:45:43.000.438,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaPtr.cpp</Transaction>
+    <Transaction>2020/09/09 17:56:41.000.150,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/09 17:56:50.000.901,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaSm.h</Transaction>
+    <Transaction>2020/09/09 17:56:50.000.901,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaSm.cpp</Transaction>
+    <Transaction>2020/09/09 18:25:16.000.011,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Conjunto\UConjuntoSm.cpp</Transaction>
+    <Transaction>2020/09/15 06:21:19.000.467,=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/15 06:21:28.000.584,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaStr.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.cpp</Transaction>
+    <Transaction>2020/09/15 06:21:28.000.584,C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Pilas\PilaStr.h=C:\Users\pc\Desktop\Aux ED1 1-2020\6.TDA Pila\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/10/10 18:32:06.174,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/10 18:32:06.275,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/10 18:32:48.256,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project4_5PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/10 18:32:48.260,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project4_5.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/10/10 18:33:06.860,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:11.538,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Project4_5PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project4_5PCH1.h</Transaction>
+    <Transaction>2020/10/10 18:33:13.938,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Project4_5.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project4_5.cbproj</Transaction>
+    <Transaction>2020/10/10 18:33:44.568,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:44.657,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:44.721,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:50.427,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:50.487,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:56.643,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Pilas\PilaLista.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:56.720,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Pilas\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:56.794,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Pilas\PilaPtr.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:56.853,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Pilas\PilaSm.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:56.887,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Pilas\PilaStr.cpp</Transaction>
+    <Transaction>2020/10/10 18:33:56.969,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 4,5(Notaciones)\Pilas\PilaVector.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

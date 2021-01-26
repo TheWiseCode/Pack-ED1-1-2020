@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColadePrioridadH
+#define ColadePrioridadH
+//---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+class ColadePrioridad{
+	private:
+		ColaPtr* vc;
+		int* vf;
+	public:
+};
+#endif

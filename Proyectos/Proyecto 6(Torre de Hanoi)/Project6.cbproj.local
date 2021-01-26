@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/10/13 09:44:55.000.421,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/10/13 09:44:55.000.370,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/13 09:44:59.000.721,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project6.cbproj</Transaction>
+    <Transaction>2020/10/13 09:44:59.000.701,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project6PCH1.h</Transaction>
+    <Transaction>2020/10/13 09:45:24.000.760,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Unit1.dfm</Transaction>
+    <Transaction>2020/10/13 09:45:24.000.760,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Unit1.cpp</Transaction>
+    <Transaction>2020/10/13 09:45:24.000.760,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Unit1.h</Transaction>
+    <Transaction>2020/10/13 09:45:26.000.890,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project6PCH1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Project6PCH1.h</Transaction>
+    <Transaction>2020/10/13 09:45:28.000.708,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project6.cbproj=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Project6.cbproj</Transaction>
+    <Transaction>2020/10/13 09:47:12.000.064,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Juego.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:12.000.064,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Juego.h</Transaction>
+    <Transaction>2020/10/13 09:47:12.000.064,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Unit1.dfm=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Juego.dfm</Transaction>
+    <Transaction>2020/10/13 09:47:33.000.040,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:33.000.016,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:33.000.072,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:38.000.083,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:38.000.112,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:44.000.460,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Pilas\PilaStr.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:44.000.367,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Pilas\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:44.000.331,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Pilas\PilaLista.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:44.000.401,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Pilas\PilaPtr.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:44.000.434,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Pilas\PilaSm.cpp</Transaction>
+    <Transaction>2020/10/13 09:47:44.000.494,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyecto 6(Torre de Hanoi)\Pilas\PilaVector.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

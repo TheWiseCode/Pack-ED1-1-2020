@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColadePrioridadH
+#define ColadePrioridadH
+//---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "ColaPtr.h"
+#include "Funciones.h"
+
+using namespace std;
+
+class ColadePrioridad{
+	private:
+		ColaPtr* vc;
+		int* vf;
+		int colaActual;
+		int cant;
+	public:
+		ColadePrioridad();
+		bool vacia();
+		int primero();
+		void poner(int e,int prior);
+};
+#endif

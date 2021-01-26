@@ -1,0 +1,87 @@
+#include <iostream>
+#include "UPoliVector.h"
+#include "UPoliPtr.h"
+#include "UPoliSm.h"
+#include "UPoliListaPtr.h"
+#include "UPoliListaSm.h"
+#include "UMemoria.h"
+#include "Menus.h"
+
+using namespace std;
+
+float area(PoliPtr fx, float a, float b);
+
+int main() {
+	PoliPtr* a = new PoliPtr;
+	PoliPtr* b = new PoliPtr;
+	a->poner_termino(3, 4);
+	a->poner_termino(2, 5);
+	a->poner_termino(7, 8);
+	b->poner_termino(3, 1);
+	b->poner_termino(4, 4);
+	PoliPtr* c = a->multiplicar(b);
+	cout << a->toStr() << endl;
+	/*
+	 float f = 6 / (2 * (2 + 1));
+	 cout << f << endl;
+	 PoliPtr p;
+	 p.poner_termino(1, 1); ;
+	 cout << p.toStr() << endl;
+	 float ar = area(p, 0, 3.34);
+	 cout << "Area: " << ar << endl; */
+	/*
+	 cout << "1.Poli Memoria simulada\n";
+	 cout << "2.Poli Vector\n";
+	 cout << "3.Poli Ptr\n";
+	 cout << "4.Poli ListaPtr\n";
+	 cout << "5.Poli ListaSm\n";
+	 int opcion;
+	 cout << "Elija su opcion : ";
+	 cin >> opcion;
+	 system("cls");
+	 if (opcion == 1) {
+	 CSMemoria *m;
+	 PoliSm *p;
+	 menuSm(m, p);
+	 }
+	 else if (opcion == 2) {
+	 PoliVector *p;
+	 menuVector(p);
+	 }
+	 else if (opcion == 3) {
+	 PoliPtr *p;
+	 menuPtr(p);
+	 }
+	 else if (opcion == 4) {
+	 PoliListaPtr *p;
+	 menuListaPtr(p);
+	 }
+	 else if (opcion == 5) {
+	 PoliListaSm *p;
+	 menuListaSm(p);
+	 } */
+	system("pause");
+	return 0;
+}
+
+float area(PoliPtr fx, float a, float b) {
+	int n = fx.numero_terminos();
+	float* exp = new float[n];
+	float* coef = new float[n];
+	for (int i = 0; i < n; i++) {
+		int ex = fx.exponente(i);
+		int co = fx.coeficiente(ex);
+		exp[i] = ex + 1;
+		coef[i] = co * 1.0 / (ex + 1);
+	}
+	float evaluaA = 0;
+	float evaluaB = 0;
+	for (int i = 0; i < n; i++) {
+		evaluaA += coef[i] * pow(a, exp[i]);
+		evaluaB += coef[i] * pow(b, exp[i]);
+	}
+	float area = evaluaB - evaluaA;
+	if (area < 0)
+		area = -1 * area; // area siempre positiva
+	return area;
+}

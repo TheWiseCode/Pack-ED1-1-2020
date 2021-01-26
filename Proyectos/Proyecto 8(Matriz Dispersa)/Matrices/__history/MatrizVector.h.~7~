@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------------------
+
+#ifndef MatrizVectorH
+#define MatrizVectorH
+
+// ---------------------------------------------------------------------------
+class MatrizVector {
+private:
+	int *vf;
+	int *vc;
+	int *vd;
+	int df, dc;
+	int rep;
+	int nt;
+public:
+	MatrizVector();
+	void dimensionar(int f, int c);
+	int dimension_fila();
+	int dimension_columna();
+	void poner(int f,int c,int valor);
+	int elemento(int f,int c);
+	void definir_valor_repetido(int r);
+};
+#endif

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/14 17:16:54.000.762,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/14 17:16:54.000.702,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/14 17:17:00.000.813,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Matrices.cbproj</Transaction>
+    <Transaction>2020/08/14 17:17:00.000.751,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\MatricesPCH1.h</Transaction>
+    <Transaction>2020/08/14 17:17:46.000.498,C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\File1.cpp</Transaction>
+    <Transaction>2020/08/14 17:17:51.000.167,C:\Users\pc\Documents\Embarcadero\Studio\Projects\MatricesPCH1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatricesPCH1.h</Transaction>
+    <Transaction>2020/08/14 17:17:53.000.805,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Matrices.cbproj=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices.cbproj</Transaction>
+    <Transaction>2020/08/14 17:18:44.000.349,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/08/14 17:18:44.000.395,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/08/14 17:19:18.000.460,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/14 17:19:44.000.530,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVector.h</Transaction>
+    <Transaction>2020/08/14 17:19:44.000.530,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVector.cpp</Transaction>
+    <Transaction>2020/08/14 17:19:50.000.199,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVector.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizVector.cpp</Transaction>
+    <Transaction>2020/08/14 17:19:50.000.199,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVector.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizVector.h</Transaction>
+    <Transaction>2020/08/14 18:02:51.000.829,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/14 18:03:03.000.013,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVectorCSR.h</Transaction>
+    <Transaction>2020/08/14 18:03:03.000.013,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVectorCSR.cpp</Transaction>
+    <Transaction>2020/08/14 18:03:08.000.447,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVectorCSR.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizVectorCSR.cpp</Transaction>
+    <Transaction>2020/08/14 18:03:08.000.447,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizVectorCSR.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizVectorCSR.h</Transaction>
+    <Transaction>2020/08/15 14:37:14.000.208,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/15 14:37:19.000.221,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtr.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.h</Transaction>
+    <Transaction>2020/08/15 14:37:19.000.221,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtr.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/15 14:37:24.000.281,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizPtr.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtr.cpp</Transaction>
+    <Transaction>2020/08/15 14:37:24.000.281,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizPtr.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtr.h</Transaction>
+    <Transaction>2020/08/15 15:06:46.000.413,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/15 15:06:52.000.584,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizSm.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/15 15:06:52.000.585,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizSm.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.h</Transaction>
+    <Transaction>2020/08/15 15:06:57.000.133,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizSm.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizSm.cpp</Transaction>
+    <Transaction>2020/08/15 15:06:57.000.133,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizSm.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizSm.h</Transaction>
+    <Transaction>2020/08/16 15:46:51.000.348,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/16 15:47:00.000.527,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtrDb.cpp</Transaction>
+    <Transaction>2020/08/16 15:47:00.000.527,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtrDb.h</Transaction>
+    <Transaction>2020/08/16 15:47:24.000.748,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtrDb.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizPtrDb.h</Transaction>
+    <Transaction>2020/08/16 15:47:24.000.748,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\MatrizPtrDb.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizPtrDb.cpp</Transaction>
+    <Transaction>2020/08/16 16:59:49.000.072,=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp</Transaction>
+    <Transaction>2020/08/16 17:00:03.000.587,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizSmDb.h</Transaction>
+    <Transaction>2020/08/16 17:00:03.000.587,C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\5.TDA Matriz Dispersa\Matrices\MatrizSmDb.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Matrices"/>
+    <File Path="Matrices\MatrizPtr.cpp"/>
+    <File Path="Matrices\MatrizPtr.cpp"/>
+    <File Path="Matrices\MatrizPtr.h"/>
+    <File Path="Matrices\MatrizSm.cpp"/>
+    <File Path="Matrices\MatrizSm.cpp"/>
+    <File Path="Matrices\MatrizSm.h"/>
+    <File Path="Matrices\MatrizVector.cpp"/>
+    <File Path="Matrices\MatrizVector.cpp"/>
+    <File Path="Matrices\MatrizVector.h"/>
+    <File Path="Matrices\MatrizVectorCSR.cpp"/>
+    <File Path="Matrices\MatrizVectorCSR.cpp"/>
+    <File Path="Matrices\MatrizVectorCSR.h"/>
+    <File Path="Matrices\MatrizPtrDb.cpp"/>
+    <File Path="Matrices\MatrizPtrDb.cpp"/>
+    <File Path="Matrices\MatrizPtrDb.h"/>
+    <File Path="Matrices\MatrizSmDb.cpp"/>
+    <File Path="Matrices\MatrizSmDb.cpp"/>
+    <File Path="Matrices\MatrizSmDb.h"/>
+    <File Path="Otros"/>
+    <File Path="Otros\Funciones.cpp"/>
+    <File Path="Otros\Funciones.cpp"/>
+    <File Path="Otros\Funciones.h"/>
+    <File Path="Otros\UMemoria.cpp"/>
+    <File Path="Otros\UMemoria.cpp"/>
+    <File Path="Otros\UMemoria.h"/>
+    <File Path="MatricesPCH1.h"/>
+    <File Path="File1.cpp"/>
+  </ProjectSortOrder>
+</BorlandProject>

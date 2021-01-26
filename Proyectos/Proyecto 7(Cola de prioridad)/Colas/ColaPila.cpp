@@ -1,0 +1,62 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ColaPila.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ColaPila::ColaPila() {
+	p = new PilaPtr();
+}
+
+bool ColaPila::vacia() {
+	return p->vacia();
+}
+
+void ColaPila::poner(int e) {
+	PilaPtr* aux = new PilaPtr();
+	while (!p->vacia()) {
+		int e;
+		p->sacar(e);
+		aux->meter(e);
+	}
+	p->meter(e);
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar(e);
+		p->meter(e);
+	}
+}
+
+void ColaPila::sacar(int &e) {
+	if (!vacia()) {
+		p->sacar(e);
+	}
+}
+
+int ColaPila::primero() {
+	if (!vacia()) {
+		return p->cima();
+	}
+}
+
+string ColaPila::toStr() {
+	ColaPila* aux = new ColaPila();
+	string s = "<<";
+	while (!vacia()) {
+		int e;
+		sacar(e);
+		aux->poner(e);
+		s = s + to_string(e);
+		if (!vacia())
+			s = s + ",";
+	}
+	s = s + "<<";
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar(e);
+		poner(e);
+	}
+	return s;
+}

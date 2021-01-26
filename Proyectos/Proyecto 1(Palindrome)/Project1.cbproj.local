@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/10/07 16:12:29.000.949,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 16:12:30.000.164,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/10/07 17:03:01.481,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 17:03:01.494,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/07 17:03:40.185,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/07 17:03:43.828,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 17:03:45.900,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/10/07 17:19:22.249,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColadePrioridad.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.291,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaLista.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.321,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaPila.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.357,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.393,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaSm.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.433,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaStr.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.478,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaVector1.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.524,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaVector2.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:22.560,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Colas\ColaVector3.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:28.953,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Pilas\PilaLista.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:29.017,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Pilas\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:29.067,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Pilas\PilaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:29.108,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Pilas\PilaSm.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:29.167,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Pilas\PilaStr.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:29.205,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Pilas\PilaVector.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:47.960,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:48.006,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:48.052,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:53.915,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/10/07 17:19:53.943,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 1(Palindrome)\Otros\UMemoria.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

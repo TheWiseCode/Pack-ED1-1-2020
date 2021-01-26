@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColaPtrH
+#define ColaPtrH
+//---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+using namespace std;
+
+struct NodoCola{
+	int elemento;
+	NodoCola* sig;
+};
+#endif

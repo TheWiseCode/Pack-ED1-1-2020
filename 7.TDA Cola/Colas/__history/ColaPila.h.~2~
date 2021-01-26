@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColaPilaH
+#define ColaPilaH
+//---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+using namespace std;
+
+class ColaPila{
+	private:
+		PilaPtr* p;
+	public:
+		ColaPila();
+
+};
+#endif

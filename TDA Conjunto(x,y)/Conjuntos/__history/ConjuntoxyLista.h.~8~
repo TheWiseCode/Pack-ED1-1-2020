@@ -1,0 +1,35 @@
+// ---------------------------------------------------------------------------
+
+#ifndef ConjuntoxyListaH
+#define ConjuntoxyListaH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "Funciones.h"
+#include "ListaPtr.h"
+
+using namespace std;
+
+struct Par {
+	int x;
+	int y;
+}
+
+class ConjuntoxyLista {
+private:
+	ListaPtr *lista;
+
+public:
+	ConjuntoxyLista();
+	bool vacio();
+	int cardinal();
+	int ordinal(int x, int y);
+	void inserta(int x, int y);
+	void suprime(int x, int y);
+	bool pertenece(int x, int y);
+	int muestreaX();
+	int muestreaY();
+	void muestrea(int &x, int &y);
+	string toStr();
+};
+#endif

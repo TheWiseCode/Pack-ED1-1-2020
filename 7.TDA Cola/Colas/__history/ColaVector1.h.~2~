@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColaVector1H
+#define ColaVector1H
+//---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+using namespace std;
+
+class ColaV1 {
+private:
+
+
+public:
+	ColaV1();
+	bool vacia();
+	void poner(int e);
+	void sacar(int &e);
+	int primero();
+	string toStr();
+};
+#endif

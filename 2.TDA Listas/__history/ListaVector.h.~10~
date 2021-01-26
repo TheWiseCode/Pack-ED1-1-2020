@@ -1,0 +1,54 @@
+// ---------------------------------------------------------------------------
+
+#ifndef ListaVectorH
+#define ListaVectorH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+const int maxVect = 100;
+
+typedef int direccion;
+
+class ListaVector {
+private:
+	int elementos[maxVect]; // int elementos*; elementos = new int[maxVect];
+	int longi;
+
+public:
+	ListaVector();
+	// Funciones de direccion
+	direccion fin();
+	direccion primero();
+	direccion siguiente(direccion);
+	direccion anterior(direccion);
+	// Selector
+	int recupera(direccion);
+	// modificadores
+	void inserta(direccion, int);
+	void suprime(direccion);
+	void modifica(direccion, int);
+	//
+	bool vacia();
+	int longitud();
+	string toStr();
+};
+
+string to_string(int value) {
+	if (value == 0)
+		return "0";
+	bool es_negativo = value < 0;
+	string r = "";
+	if (es_negativo)
+		value *= -1;
+	while (value != 0) {
+		char c = value % 10 + 0x30;
+		r = c + r;
+		value = value / 10;
+	}
+	return es_negativo ? "-" + r : r;
+}
+
+#endif

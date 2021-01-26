@@ -1,0 +1,169 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Menus.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+/*
+ PROYECTO CONJUNTO (usando Smemoria)
+ 1) Crear Memoria
+ 2) Pedir Espacio Memoria
+ 3) Crear Conj A
+ 4) Crear Conj B
+ 5) Crear Conj C
+ 6) Insertar Elemento ( que pida a que Conj)
+ 7) Mostrar Conjunto (Que indique qu conj)
+ 8) Unir y poner en C el resultado
+ 9) Intersectar y poner en C el resultado
+ 10) Salir
+ */
+/*
+ PROYECTO POLINOMIO (SMemoria)
+ 1) Crear memoria
+ 2) Pedir espacio
+ 3) Liberar espacio
+ 4) Crear polinomio
+ 5) Poner Termino
+ 6) Mostrar Polinomio
+ 7) Derivar
+ 8) Salir */
+/* Menu Combinado
+ 1) Crear memoria
+ 2) Pedir espacio
+ 3) Liberar espacio
+ 4) Mostrar Memoria
+ 5) Crear Conj A
+ 6) Crear Conj B
+ 7) Crear Conj C
+ 8) Insertar Elemento ( que pida a que Conj)
+ 9)  Mostrar Conjunto (Que indique qu conj)
+ 10) Unir y poner en C el resultado
+ 11) Intersectar y poner en C el resultado
+ 12) Crear polinomio
+ 13) Poner Termino
+ 14) Mostrar Polinomio
+ 15) Derivar
+ 16) Salir */
+
+void menu1(CSMemoria *m, ConjuntoSm *a, ConjuntoSm *b, ConjuntoSm* c, PoliSm* p)
+{
+	cout << "MENU CONJUNTO-POLINOMIO\n";
+	cout << "1.Crear Memoria\n";
+	cout << "2.Pedir espacio\n";
+	cout << "3.Liberar espacio\n";
+	cout << "4.Mostrar Memoria\n";
+	cout << "5.Crear Conjunto A\n";
+	cout << "6.Crear Conjunto B\n";
+	cout << "7.Crear Conjunto C\n";
+	cout << "8.Insertar elemento\n";
+	cout << "9.Mostrar Conjunto\n";
+	cout << "10.Unir\n";
+	cout << "11.Intersectar\n";
+	cout << "12.Crear Polinomio\n";
+	cout << "13.Poner Polinomio\n";
+	cout << "14.Mostrar Polinomio\n";
+	cout << "15.Derivar\n";
+	cout << "16.Salir\n";
+	int opcion;
+	cout << "Escoja su opcion: ";
+	cin >> opcion;
+	switch (opcion) {
+	case 1: {
+			m = new CSMemoria();
+		} break;
+	case 2: {
+			string s;
+			cout << "Introduzca los ids : ";
+			cin.ignore();
+			getline(cin, s);
+		} break;
+	case 3: {
+			int dir;
+			cout << "Direccion a liberar: ";
+			cin >> dir;
+			m->delete_espacio(dir);
+		} break;
+	case 4: {
+			m->mostrar_memoria();
+		} break;
+	case 5: {
+			a = new ConjuntoSm(m);
+		} break;
+	case 6: {
+			b = new ConjuntoSm(m);
+		} break;
+	case 7: {
+			c = new ConjuntoSm(m);
+		} break;
+	case 8: {
+			int e;
+			cout << "Elemento a insertar: ";
+			cin >> e;
+			int conj;
+			cout << "Escriba 1 para conjunto A\n";
+			cout << "Escriba 2 para conjunto B\n";
+			cout << "Escriba 3 para conjunto C\n";
+			cin >> conj;
+			if (conj == 1)
+				a->inserta(e);
+			else if (conj == 2)
+				b->inserta(e);
+			else if (conj == 3)
+				c->inserta(e);
+		} break;
+	case 9: {
+			int conj;
+			cout << "Escriba 1 para conjunto A\n";
+			cout << "Escriba 2 para conjunto B\n";
+			cout << "Escriba 3 para conjunto C\n";
+			cin >> conj;
+			if (conj == 1)
+				cout << a->toStr() << endl;
+			else if (conj == 2)
+				cout << b->toStr() << endl;
+			else if (conj == 3)
+				cout << c->toStr() << endl;
+		} break;
+	case 10: {
+			a->unir(b, c);
+		} break;
+	case 11: {
+			a->intersectar(b, c);
+		} break;
+	case 12: {
+			p = new PoliSm(m);
+		} break;
+	case 13: {
+			int c, e;
+			cout << "Coeficiente  : ";
+			cin >> c;
+			cout << "Exponente : ";
+			cin >> e;
+			p->poner_termino(c, e);
+		} break;
+	case 14: {
+			cout << p->toStr() << endl;
+		} break;
+	case 15: {
+			p->derivar();
+		} break;
+	}
+	if (opcion != 16) {
+		system("pause");
+		system("cls");
+		menu1(m, a, b, c, p);
+	}
+}
+
+void lineas() {
+	CSMemoria* m = new CSMemoria();
+	int d = m->new_espacio("juan,perez,carballo");
+	int x = m->new_espacio("9,agosto,2020");
+	m->delete_espacio(d);
+	ConjuntoSM*a = new ConjuntoSm(m);
+	a->inserte(20);
+	a->inserte(20);
+	a->inserte(40);
+
+}

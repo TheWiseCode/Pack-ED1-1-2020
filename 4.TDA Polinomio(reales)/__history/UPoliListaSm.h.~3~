@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------------------
+
+#ifndef UPoliListaSmH
+#define UPoliListaSmH
+
+// ---------------------------------------------------------------------------
+class PoliLista {
+private:
+	ListaPtr* lista;
+	int nt; // numero de terminos
+
+	// metodos privados
+	NodoL* exponente_existe(int exp);
+
+public:
+	PoliListaSm();
+	bool es_cero();
+	void poner_termino(int coef, int exp);
+	int coeficiente(int exp);
+	int exponente(int nro);
+	int grado();
+	int numero_terminos();
+	PoliLista* suma(PoliLista* otro);
+	PoliLista* resta(PoliLista* otro);
+	string toStr();
+};
+#endif

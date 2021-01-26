@@ -1,0 +1,15 @@
+// ---------------------------------------------------------------------------
+
+#ifndef PilaSmH
+#define PilaSmH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+const string datosP = "elemento,sig";
+const string elementoP = "->elemento";
+const string sigP = "->sig";
+
+#endif

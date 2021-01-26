@@ -1,0 +1,158 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UPoliListaPtr.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+PoliListaPtr::PoliListaPtr() {
+	lista = new ListaPtr();
+	nt = 0;
+}
+
+bool PoliListaPtr::es_cero() {
+	return nt == 0;
+}
+
+// Me devuelve el coeficiente del exponente que mando si existe
+// Si no existe me devuelve NULL
+NodoL* PoliListaPtr::exponente_existe(int exp) {
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		NodoL* aux_sig = lista->siguiente(aux);
+		int elemento = lista->recupera(aux_sig);
+		if (elemento == exp) {
+			return aux;
+		}
+		aux = lista->siguiente(aux_sig);
+	}
+	return NULL;
+}
+
+void PoliListaPtr::poner_termino(int coef, int exp) {
+	NodoL* existe = exponente_existe(exp);
+	if (existe == NULL) {
+		lista->inserta_fin(coef);
+		lista->inserta_fin(exp);
+		nt++;
+	}
+	else {
+		int elemento = lista->recupera(existe);
+		// existe->e = 4 ; coef = 3 ; existe->e = 7
+		lista->modifica(existe, elemento + coef);
+		if (lista->recupera(existe) == 0) {
+			NodoL* exp_elim = lista->siguiente(existe); // existe->sig;
+			lista->suprime(existe);
+			lista->suprime(exp_elim);
+			nt--;
+		}
+	}
+}
+
+int PoliListaPtr::coeficiente(int exp) {
+	if (exp >= 0 && exp <= grado()) {
+		NodoL* aux = lista->primero();
+		while (aux != NULL) {
+			NodoL* aux_sig = lista->siguiente(aux);
+			int elemento = lista->recupera(aux_sig);
+			if (elemento == exp)
+				return lista->recupera(aux); // aux->elemento;
+			aux = lista->siguiente(aux_sig); // aux->sig->sig;
+		}
+	}
+	cout << "ERROR NO EXISTE EXPONENTE CON ESE TERMINO\n";
+}
+
+int PoliListaPtr::exponente(int nro) {
+	int c = 0;
+	NodoL* aux = lista->primero();
+	NodoL* aux_sig = lista->siguiente(aux);
+	int elemento = lista->recupera(aux_sig);
+	int res = elemento;
+	while (c < nro) {
+		aux = lista->siguiente(lista->siguiente(aux)); // aux->sig->sig;
+		res = lista->recupera(lista->siguiente(aux)); // aux->sig->elemento;
+		c++;
+	}
+	return res;
+}
+
+int PoliListaPtr::grado() {
+	NodoL* aux = lista->primero();
+	NodoL* aux_sig = lista->siguiente(aux);
+	int elemento = lista->recupera(aux_sig);
+	int may = elemento;
+	while (aux != NULL) {
+		aux_sig = lista->siguiente(aux);
+		elemento = lista->recupera(aux_sig);
+		if (elemento > may)
+			may = elemento;
+		aux = lista->siguiente(lista->siguiente(aux));
+	}
+	return may;
+}
+
+int PoliListaPtr::numero_terminos() {
+	return nt;
+}
+
+PoliListaPtr* PoliListaPtr::suma(PoliListaPtr* otro) {
+	PoliListaPtr *pr = new PoliListaPtr();
+	for (int i = 0; i < nt; i++) {
+		int exp1 = this->exponente(i);
+		int coef1 = this->coeficiente(exp1);
+		pr->poner_termino(coef1, exp1);
+	}
+	for (int i = 0; i < otro->nt; i++) {
+		// poner_termino(p1.coeficiente(p2.exponente(i)), p2.exponente(i))
+		int exp2 = otro->exponente(i);
+		int coef2 = otro->coeficiente(exp2);
+		pr->poner_termino(coef2, exp2);
+	}
+	return pr;
+}
+
+PoliListaPtr* PoliListaPtr::resta(PoliListaPtr* otro) {
+	PoliListaPtr *pr = new PoliListaPtr();
+	for (int i = 0; i < nt; i++) {
+		int exp1 = this->exponente(i);
+		int coef1 = this->coeficiente(exp1);
+		pr->poner_termino(coef1, exp1);
+	}
+	for (int i = 0; i < otro->nt; i++) {
+		// poner_termino(p1.coeficiente(p2.exponente(i)), p2.exponente(i))
+		int exp2 = otro->exponente(i);
+		int coef2 = -otro->coeficiente(exp2);
+		pr->poner_termino(coef2, exp2);
+	}
+	return pr;
+}
+
+string PoliListaPtr::toStr() {
+	string ret = "";
+	for (int i = 0; i < nt; i++) {
+		int exp = this->exponente(i);
+		int coef = this->coeficiente(exp);
+		string signo;
+		if (coef > 0)
+			signo = "+";
+		else {
+			signo = "-";
+			coef = coef*-1;
+		}
+		ret = ret + signo + to_string(coef) + "x^" + to_string(exp);
+	}
+	return ret;
+}
+
+void PoliListaPtr::derivar() {
+	for (int i = 0; i < numero_terminos(); i++) {
+		int exp = exponente(i);
+		int coef = coeficiente(exp);
+		poner_termino(coef*(-1), exp);
+		if (nt > 0) {
+			poner_termino(coef * exp, exp - 1);
+		}
+	}
+}

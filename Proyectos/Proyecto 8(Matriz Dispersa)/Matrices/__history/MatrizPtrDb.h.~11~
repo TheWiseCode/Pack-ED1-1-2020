@@ -1,0 +1,46 @@
+// ---------------------------------------------------------------------------
+
+#ifndef MatrizPtrDbDbH
+#define MatrizPtrDbDbH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "Funciones.h"
+
+using namespace std;
+
+struct NodoCol {
+	int col;
+	int dato;
+	NodoCol* sigC;
+};
+
+struct NodoFil {
+	int fil;
+	NodoFil* sigF;
+	NodoFil* antF;
+	NodoCol* ptrCol;
+};
+
+class MatrizPtrDb {
+private:
+	NodoFil* ptrMat;
+	int df, dc;
+	int rep;
+	int nt;
+
+	void insertar_fila(NodoFil* nf);
+	NodoFil* existe_fil(int f);
+	NodoCol* existe_col(NodoFil* f,int c);
+
+public:
+	MatrizPtrDb();
+	void dimensionar(int f, int c);
+	int dimension_fila();
+	int dimension_columna();
+	void poner(int f, int c, int valor);
+	int elemento(int f, int c);
+	void definir_valor_repetido(int r);
+	string toStr();
+};
+#endif

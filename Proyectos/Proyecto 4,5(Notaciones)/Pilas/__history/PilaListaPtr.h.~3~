@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#ifndef PilaListaPtrH
+#define PilaListaPtrH
+//---------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+class PilaListaPtr{
+	private:
+		ListaPtr *l;
+	public:
+};
+#endif

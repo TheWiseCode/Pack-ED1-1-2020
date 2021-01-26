@@ -1,0 +1,275 @@
+#include <iostream>
+#include <string>
+#include "ListaVector.h"
+#include "ListaPtr.h"
+#include "ListaSm.h"
+
+#include <list>
+
+using namespace std;
+
+void menu1(CSMemoria *mem, ListaSm *listaS);
+void menu2(ListaVector *listaV);
+void menu3(ListaPtr *listaP);
+
+void prueba() {
+	CSMemoria mem1;
+	CSMemoria *mem2;
+	int x = 3;
+	x = 34;
+	mem2 = new CSMemoria();
+	int y = mem2->new_espacio("x,y,z");
+	mem2->new_espacio("a,b,c");
+	// mem2->mostrar_memoria();
+	delete(mem2);
+	mem2 = new CSMemoria();
+	// mem2->mostrar_memoria();
+	// --------
+	int z = mem1.new_espacio("x,y,z");
+	mem1.new_espacio("a,b,c");
+	mem1.mostrar_memoria();
+}
+
+void prueba1() {
+	CSMemoria *mem = new CSMemoria();
+	mem->new_espacio("1,julio,2020");
+	ListaSm *list1 = new ListaSm(mem);
+	list1->inserta_fin(1);
+	list1->inserta_fin(2);
+	list1->inserta_fin(3);
+	list1->inserta_fin(4);
+	list1->inserta_fin(5);
+	mem->mostrar_memoria();
+	cout << list1->toStr() << endl;
+
+}
+
+void tarea(ListaPtr &l) {
+	l.inserta_fin(1);
+	l.inserta_fin(2);
+	l.inserta_fin(3);
+}
+
+void ejercicio1() {
+	// Ejercicio 1
+	ListaPtr *lista = new ListaPtr();
+	lista->inserta_fin(1);
+	cout << lista->toStr() << endl;
+	if (lista->es_palindroma()) {
+		cout << "TRUE" << endl;
+	}
+	else {
+		cout << "FALSE" << endl;
+	}
+}
+
+void ejercicio2() {
+	ListaPtr *lista = new ListaPtr();
+	lista->inserta_fin(1); // k = 0
+	lista->inserta_fin(2); // k = 1
+	lista->inserta_fin(3); // k = 2
+	lista->inserta_fin(4); // k = 3
+	lista->inserta_fin(5); // k = 4
+	lista->inserta(2, 99);
+	cout << lista->toStr() << endl;
+}
+
+void ejercicio3() {
+	ListaPtr *lista = new ListaPtr();
+	lista->inserta_fin(24);
+	lista->inserta_fin(2);
+	lista->inserta_fin(24);
+	lista->inserta_fin(4);
+	lista->inserta_fin(100);
+	cout << lista->toStr() << endl;
+	lista->elimina_nodo_con_mayor_dato();
+	cout << lista->toStr() << endl;
+}
+
+void ejercicio4() {
+	ListaPtr *lista = new ListaPtr();
+	lista->inserta_fin(24);
+	lista->inserta_fin(2);
+	lista->inserta_fin(24);
+	lista->inserta_fin(4);
+	lista->inserta_fin(100);
+	lista->inserta_fin(4);
+	lista->inserta_fin(101);
+}
+
+void ejercicio5() {
+	ListaPtr *lista = new ListaPtr();
+	lista->inserta_fin(5);
+	lista->inserta_fin(4);
+	lista->inserta_fin(3);
+	lista->inserta_fin(2);
+	lista->inserta_fin(1);
+	cout << lista->toStr() << endl;
+	lista->muestra_nodos();
+	lista->ordenamiento();
+	cout << lista->toStr() << endl;
+	lista->muestra_nodos();
+}
+
+void seleccion_lista() {
+	ListaVector *listaV;
+	ListaPtr *listaP;
+	ListaSm *listaS;
+	CSMemoria *mem;
+	cout << "1.Lista Simulada\n";
+	cout << "2.Lista Vector\n";
+	cout << "3.Lista Punteros\n";
+	int opcion;
+	cout << "Escoja tipo de lista : ";
+	cin >> opcion;
+	switch (opcion) {
+	case 1:
+		menu1(mem, listaS);
+		break;
+	case 2:
+		menu2(listaV);
+		break;
+	case 3:
+		menu3(listaP);
+		break;
+	default:
+		cout << "ERROR\n";
+	}
+}
+
+int main() {
+	ListaPtr* l = new ListaPtr();
+	l->inserta(l->primero(), 1);
+	l->inserta(l->primero(), 2);
+	l->inserta(l->primero(), 3);
+	ListaPtr::mostrarNodos(l);
+	l->ordenamientoOp();
+	ListaPtr::mostrarNodos(l);
+	system("pause");
+	return 0;
+}
+
+void menu1(CSMemoria *mem, ListaSm *listaS) {
+	cout << "1.Crear Sm\n";
+	cout << "2.Pedir espacio\n";
+	cout << "3.Liberar espacio\n";
+	cout << "4.Crear Lista\n";
+	cout << "5.Insertar inicio\n";
+	cout << "6.Insertar final\n";
+	cout << "7.Mostrar memoria\n";
+	cout << "8.Mostrar listas\n";
+	cout << "9.Salir\n";
+	int opcion;
+	cout << "Elija su opcion : ";
+	cin >> opcion;
+	switch (opcion) {
+	case 1: {
+			mem = new CSMemoria();
+		} break;
+	case 2: {
+			string id;
+			cout << "Ids : ";
+			cin.ignore();
+			getline(cin, id);
+			mem->new_espacio(id);
+		} break;
+	case 3: {
+			int dir;
+			cout << "direccion a liberar : ";
+			cin >> dir;
+			mem->delete_espacio(dir);
+		} break;
+	case 4: {
+			listaS = new ListaSm(mem);
+		} break;
+	case 5: {
+			int e;
+			cout << "Elemento a insertar : ";
+			cin >> e;
+			listaS->inserta_inicio(e);
+		} break;
+	case 6: {
+			int e;
+			cout << "Elemento a insertar : ";
+			cin >> e;
+			listaS->inserta_fin(e);
+		} break;
+	case 7: {
+			mem->mostrar_memoria();
+		} break;
+	case 8: {
+			cout << listaS->toStr() << endl;
+		} break;
+	}
+	if (opcion != 9) {
+		menu1(mem, listaS);
+	}
+}
+
+void menu2(ListaVector *listaV) {
+	cout << "1.Crear Lista\n";
+	cout << "2.Insertar inicio\n";
+	cout << "3.Insertar final\n";
+	cout << "4.Mostrar listas\n";
+	cout << "5.Salir\n";
+	int opcion;
+	cout << "Elija su opcion : ";
+	cin >> opcion;
+	switch (opcion) {
+	case 1: {
+			listaV = new ListaVector();
+		} break;
+	case 2: {
+			int e;
+			cout << "Elemento a insertar : ";
+			cin >> e;
+			listaV->inserta_inicio(e);
+		} break;
+	case 3: {
+			int e;
+			cout << "Elemento a insertar : ";
+			cin >> e;
+			listaV->inserta_fin(e);
+		} break;
+	case 4: {
+			cout << listaV->toStr() << endl;
+		} break;
+	}
+	if (opcion != 5) {
+		menu2(listaV);
+	}
+}
+
+void menu3(ListaPtr *listaP) {
+	cout << "1.Crear Lista\n";
+	cout << "2.Insertar inicio\n";
+	cout << "3.Insertar final\n";
+	cout << "4.Mostrar listas\n";
+	cout << "5.Salir\n";
+	int opcion;
+	cout << "Elija su opcion : ";
+	cin >> opcion;
+	switch (opcion) {
+	case 1: {
+			listaP = new ListaPtr();
+		} break;
+	case 2: {
+			int e;
+			cout << "Elemento a insertar : ";
+			cin >> e;
+			// listaP->inserta_inicio(e);
+		} break;
+	case 3: {
+			int e;
+			cout << "Elemento a insertar : ";
+			cin >> e;
+			// listaP->inserta_fin(e);
+		} break;
+	case 4: {
+			cout << listaP->toStr() << endl;
+		} break;
+	}
+	if (opcion != 5) {
+		menu3(listaP);
+	}
+}

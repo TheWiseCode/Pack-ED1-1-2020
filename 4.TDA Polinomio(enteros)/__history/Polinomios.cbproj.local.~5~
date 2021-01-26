@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/07/11 18:40:21.000.703,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/07/11 18:40:21.000.629,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/07/11 18:40:58.000.560,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PolinomiosPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/07/11 18:40:58.000.568,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Polinomios.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/07/11 18:41:33.000.324,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/07/11 18:41:36.000.635,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PolinomiosPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PolinomiosPCH1.h</Transaction>
+    <Transaction>2020/07/11 18:41:39.000.586,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Polinomios.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Polinomios.cbproj</Transaction>
+    <Transaction>2020/07/11 18:42:24.000.238,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/11 18:42:31.000.443,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h</Transaction>
+    <Transaction>2020/07/11 18:42:31.000.443,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/11 18:43:05.000.736,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliVector.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.cpp</Transaction>
+    <Transaction>2020/07/11 18:43:05.000.736,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliVector.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\PoliVector.h</Transaction>
+    <Transaction>2020/07/11 19:47:03.000.519,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Funciones.cpp</Transaction>
+    <Transaction>2020/07/11 19:53:41.000.635,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/11 19:53:47.000.055,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliPtr.h</Transaction>
+    <Transaction>2020/07/11 19:53:47.000.055,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliPtr.cpp</Transaction>
+    <Transaction>2020/07/18 18:28:12.000.870,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/18 18:28:20.000.125,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliSm.h</Transaction>
+    <Transaction>2020/07/18 18:28:20.000.124,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliSm.cpp</Transaction>
+    <Transaction>2020/07/18 18:29:26.000.566,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UMemoria.cpp</Transaction>
+    <Transaction>2020/07/18 19:09:36.000.385,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\ListaVector.cpp</Transaction>
+    <Transaction>2020/07/18 19:09:36.000.234,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\ListaPtr.cpp</Transaction>
+    <Transaction>2020/07/18 19:09:36.000.312,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\ListaSm.cpp</Transaction>
+    <Transaction>2020/07/18 19:13:23.000.389,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/18 19:13:31.000.664,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliLista.h</Transaction>
+    <Transaction>2020/07/18 19:13:31.000.664,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliLista.cpp</Transaction>
+    <Transaction>2020/07/18 20:01:31.000.691,=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp</Transaction>
+    <Transaction>2020/07/18 20:01:38.000.565,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliListaSm.cpp</Transaction>
+    <Transaction>2020/07/18 20:01:38.000.565,C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\3.TDA Polinomio\UPoliListaSm.h</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <VirtualFolder ID="{595DC27F-1603-4C99-BE2F-8FEF1E1E3A29}"/>
+    <File Path="ListaPtr.cpp"/>
+    <File Path="ListaPtr.cpp"/>
+    <File Path="ListaPtr.h"/>
+    <File Path="ListaSm.cpp"/>
+    <File Path="ListaSm.cpp"/>
+    <File Path="ListaSm.h"/>
+    <File Path="ListaVector.cpp"/>
+    <File Path="ListaVector.cpp"/>
+    <File Path="ListaVector.h"/>
+    <VirtualFolder ID="{A0523A0D-8873-4B9B-AB88-5A9B825FE14D}"/>
+    <File Path="UMemoria.cpp"/>
+    <File Path="UMemoria.cpp"/>
+    <File Path="UMemoria.h"/>
+    <File Path="Funciones.cpp"/>
+    <File Path="Funciones.cpp"/>
+    <File Path="Funciones.h"/>
+    <VirtualFolder ID="{8EFF8B85-74D6-4809-89C1-41479BE6F237}"/>
+    <File Path="UPoliPtr.cpp"/>
+    <File Path="UPoliPtr.cpp"/>
+    <File Path="UPoliPtr.h"/>
+    <File Path="UPoliSm.cpp"/>
+    <File Path="UPoliSm.cpp"/>
+    <File Path="UPoliSm.h"/>
+    <File Path="UPoliVector.cpp"/>
+    <File Path="UPoliVector.cpp"/>
+    <File Path="UPoliVector.h"/>
+    <File Path="UPoliLista.cpp"/>
+    <File Path="UPoliLista.cpp"/>
+    <File Path="UPoliLista.h"/>
+    <File Path="UPoliListaSm.cpp"/>
+    <File Path="UPoliListaSm.cpp"/>
+    <File Path="UPoliListaSm.h"/>
+    <File Path="File1.cpp"/>
+    <File Path="PolinomiosPCH1.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

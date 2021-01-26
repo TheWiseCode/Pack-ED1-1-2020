@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/08/09 15:02:07.681,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/09 15:02:07.759,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/09 15:02:15.730,C:\Users\pc\Documents\Embarcadero\Studio\Projects\PoliconjuntoPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/09 15:02:15.736,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Policonjunto.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/08/09 15:03:30.388,C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/09 15:03:33.656,C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\PoliconjuntoPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\PoliconjuntoPCH1.h</Transaction>
+    <Transaction>2020/08/09 15:03:36.537,C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Policonjunto.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Policonjunto.cbproj</Transaction>
+    <Transaction>2020/08/09 15:05:43.735,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Conjunto\UConjuntoLista.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:43.880,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Conjunto\UConjuntoListaPtr.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:43.935,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Conjunto\UConjuntoPtr.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:44.020,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Conjunto\UConjuntoSm.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:44.113,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Conjunto\UConjuntoV.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:50.818,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:50.914,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:50.969,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:56.987,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/08/09 15:05:57.137,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:04.354,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Polinomios\UPoliListaPtr.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:04.477,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Polinomios\UPoliListaSm.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:04.564,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Polinomios\UPoliPtr.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:04.613,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Polinomios\UPoliSm.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:04.663,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Polinomios\UPoliVector.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:51.374,=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:55.294,C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Menus.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/08/09 15:06:55.294,C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Menus.h=C:\Users\pc\Desktop\Aux ED1 1-2020\Polinomio-Conjunto\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

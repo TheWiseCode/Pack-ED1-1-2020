@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColadePrioridadH
+#define ColadePrioridadH
+//---------------------------------------------------------------------------
+
+class ColadePrioridad{
+	private:
+		ColaPtr* vc;
+		int* vf;
+	public:
+};
+#endif

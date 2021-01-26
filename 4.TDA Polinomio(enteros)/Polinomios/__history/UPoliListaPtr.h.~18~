@@ -1,0 +1,50 @@
+// ---------------------------------------------------------------------------
+
+#ifndef UPoliListaPtrH
+#define UPoliListaPtrH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "ListaPtr.h"
+
+using namespace std;
+
+class PoliListaPtr {
+private:
+	ListaPtr* lista;
+	int nt; // numero de terminos
+
+	// metodos privados
+	NodoL* exponente_existe(int exp);
+
+public:
+	PoliListaPtr();
+	bool es_cero();
+	void poner_termino(int coef, int exp);
+	int coeficiente(int exp);
+	int exponente(int nro);
+	int grado();
+	int numero_terminos();
+	PoliListaPtr* suma(PoliListaPtr* otro);
+	PoliListaPtr* resta(PoliListaPtr* otro);
+	string toStr();
+	void derivar();
+};
+
+class CPoliTVD {
+private:
+	Lista PoliTVD;
+
+public:
+	CPoliDEMV();
+	bool es_cero();
+	void poner_termino(int coef, int exp);
+	int coeficiente(int exp);
+	int exponente(int nro);
+	int grado();
+	int numero_terminos();
+	void suma(CPoliDEMV b);
+	void resta(CPoliDEMV b);
+	void derivada();
+};
+#endif

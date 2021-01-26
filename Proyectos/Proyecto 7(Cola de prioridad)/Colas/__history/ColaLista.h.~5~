@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef ColaListaH
+#define ColaListaH
+//---------------------------------------------------------------------------
+#include<iostream>
+#include "ListaPtr.h"
+using namespace std;
+
+
+class ColaLista{
+	private:
+		ListaPtr* L;
+	public:
+		ColaLista();
+		bool vacia();
+		void poner(int e);
+		void sacar(int &e);
+		int primero();
+};
+#endif

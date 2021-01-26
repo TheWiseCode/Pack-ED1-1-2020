@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/07/25 18:22:09.000.602,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/07/25 18:22:09.000.585,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/07/25 18:22:38.000.835,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Conjuntos.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/07/25 18:22:38.000.781,C:\Users\pc\Documents\Embarcadero\Studio\Projects\ConjuntosPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/07/25 18:22:51.000.470,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/07/25 18:22:54.000.014,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\ConjuntosPCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\ConjuntosPCH1.h</Transaction>
+    <Transaction>2020/07/25 18:22:56.000.055,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjuntos.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Conjuntos.cbproj</Transaction>
+    <Transaction>2020/07/25 18:28:46.000.424,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 18:28:55.000.452,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\UConjuntoV.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 18:28:55.000.452,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\UConjuntoV.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.h</Transaction>
+    <Transaction>2020/07/25 18:29:06.000.525,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\UConjuntoV.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\UConjuntoV.cpp</Transaction>
+    <Transaction>2020/07/25 18:29:06.000.525,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\UConjuntoV.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\UConjuntoV.h</Transaction>
+    <Transaction>2020/07/25 19:05:45.000.994,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/07/25 19:38:25.000.861,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 19:38:46.000.147,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 19:38:46.000.147,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.h</Transaction>
+    <Transaction>2020/07/25 19:38:58.000.070,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\Unit1.cpp=</Transaction>
+    <Transaction>2020/07/25 19:39:01.000.716,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 19:39:21.000.082,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\UConjuntoPtr.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.h</Transaction>
+    <Transaction>2020/07/25 19:39:21.000.082,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Conjunto\UConjuntoPtr.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Cojunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 20:21:55.000.100,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/07/25 20:22:08.000.325,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/25 20:22:21.000.687,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Conjunto\UConjuntoSm.cpp</Transaction>
+    <Transaction>2020/07/25 20:22:21.000.687,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Conjunto\UConjuntoSm.h</Transaction>
+    <Transaction>2020/07/26 15:14:08.000.591,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/07/26 15:14:08.000.540,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/07/26 15:14:08.000.644,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/07/26 15:16:04.000.572,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/26 15:16:33.000.555,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Conjunto\UConjuntoListaPtr.cpp</Transaction>
+    <Transaction>2020/07/26 15:16:33.000.555,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Conjunto\UConjuntoListaPtr.h</Transaction>
+    <Transaction>2020/07/26 15:50:51.000.121,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/26 15:51:24.000.951,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Conjunto\UConjuntoLista.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/26 15:51:24.000.951,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Conjunto\UConjuntoLista.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.h</Transaction>
+    <Transaction>2020/07/26 16:11:09.000.944,=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp</Transaction>
+    <Transaction>2020/07/26 16:11:16.000.726,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Menus.h=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.h</Transaction>
+    <Transaction>2020/07/26 16:11:16.000.726,C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Menus.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\4.TDA Conjunto\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

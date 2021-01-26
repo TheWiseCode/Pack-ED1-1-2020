@@ -1,0 +1,46 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "DicolaCola.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+DicolaC::DicolaC() {
+	k = new ColaPtr();
+}
+
+void DicolaC::poner(int e) {
+	k->poner(e);
+}
+
+void DicolaC::poner_frente(int e) {
+	ColaPtr* aux = new ColaPtr();
+	while (!k->vacia()) {
+		int s;
+		k->sacar(s);
+		aux->poner(s);
+	}
+	k->poner(e);
+	while (!aux->vacia()) {
+		int s;
+		aux->sacar(s);
+		k->poner(s);
+	}
+}
+
+void DicolaC::sacar(int& e) {
+	k->sacar(e);
+}
+
+bool DicolaC::vacia() {
+	return k->vacia();
+}
+
+int DicolaC::primero() {
+	return k->primero();
+}
+
+strint DicolaC::toStr() {
+	return k->toStr();
+}

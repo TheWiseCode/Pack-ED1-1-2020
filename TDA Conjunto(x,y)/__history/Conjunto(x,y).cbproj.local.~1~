@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/20 07:17:04.000.175,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/08/20 07:17:04.000.040,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/30 16:01:30.794,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/30 16:01:30.856,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/30 16:02:06.480,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Conjunto(x,y)PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/30 16:02:06.486,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Conjunto(x,y).cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/08/30 16:02:16.193,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/30 16:02:23.362,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Conjunto(x,y)PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Conjunto(x,y)PCH1.h</Transaction>
+    <Transaction>2020/08/30 16:02:25.931,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Conjunto(x,y).cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Conjunto(x,y).cbproj</Transaction>
+    <Transaction>2020/08/30 16:03:06.433,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Unit1.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:22.185,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\ConjuntoxyLista.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Unit1.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:22.185,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\ConjuntoxyLista.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Unit1.h</Transaction>
+    <Transaction>2020/08/30 16:03:27.522,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Conjuntos\ConjuntoxyLista.cpp=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\ConjuntoxyLista.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:27.522,C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Conjuntos\ConjuntoxyLista.h=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\ConjuntoxyLista.h</Transaction>
+    <Transaction>2020/08/30 16:03:35.226,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:35.269,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:35.306,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:41.692,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/08/30 16:03:41.773,=C:\Users\pc\Desktop\Aux ED1 1-2020\TDA Conjunto(x,y)\Otros\UMemoria.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

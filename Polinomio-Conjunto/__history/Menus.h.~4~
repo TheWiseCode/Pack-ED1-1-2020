@@ -1,0 +1,8 @@
+//---------------------------------------------------------------------------
+
+#ifndef MenusH
+#define MenusH
+//---------------------------------------------------------------------------
+void menu1(CSMemoria *m, ConjuntoSm *a, ConjuntoSm *b, ConjuntoSm* c, PoliSm* p);
+
+#endif

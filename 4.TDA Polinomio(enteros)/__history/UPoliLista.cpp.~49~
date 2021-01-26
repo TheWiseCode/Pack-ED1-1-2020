@@ -1,0 +1,134 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UPoliLista.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+PoliLista::PoliLista() {
+	lista = new ListaPtr();
+	nt = 0;
+}
+
+bool PoliLista::es_cero() {
+	return nt == 0;
+}
+
+// Me devuelve el coeficiente del exponente que mando si existe
+// Si no existe me devuelve NULL
+NodoL* PoliLista::exponente_existe(int exp) {
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		if (aux->sig->elemento == exp) {
+			return aux;
+		}
+		aux = aux->sig->sig;
+	}
+	return NULL;
+}
+
+void PoliLista::poner_termino(int coef, int exp) {
+	NodoL* existe = exponente_existe(exp);
+	if (existe == NULL) {
+		lista->inserta_fin(coef);
+		lista->inserta_fin(exp);
+		nt++;
+	}
+	else {
+		existe->elemento = existe->elemento + coef;
+		if (existe->elemento == 0) {
+			NodoL* exp_elim = existe->sig;
+			lista->suprime(existe);
+			lista->suprime(exp_elim);
+			nt--;
+		}
+	}
+}
+
+int PoliLista::coeficiente(int exp) {
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		if (aux->sig->elemento == exp)
+			return aux->elemento;
+		aux = aux->sig->sig;
+	}
+	cout << "ERROR NO EXISTE EXPONENTE CON ESE TERMINO\n";
+}
+
+int PoliLista::exponente(int nro) {
+	int c = 0;
+	NodoL* aux = lista->primero();
+	int res = aux->sig->elemento;
+	while (c < nro) {
+		aux = aux->sig->sig;
+		res = aux->sig->elemento;
+		c++;
+	}
+	return res;
+
+}
+
+int PoliLista::grado() {
+	NodoL* aux = lista->primero();
+	int may = aux->sig->elemento;
+	while (aux != NULL) {
+		if (aux->sig->elemento > may)
+			may = aux->sig->elemento;
+		aux = aux->sig->sig;
+	}
+	return may;
+}
+
+int PoliLista::numero_terminos() {
+	return nt;
+}
+
+PoliLista* PoliLista::suma(PoliLista* otro) {
+	PoliLista *pr = new PoliLista();
+	for (int i = 0; i < nt; i++) {
+		int exp1 = this->exponente(i);
+		int coef1 = this->coeficiente(exp1);
+		pr->poner_termino(coef1, exp1);
+	}
+	for (int i = 0; i < otro->nt; i++) {
+		// poner_termino(p1.coeficiente(p2.exponente(i)), p2.exponente(i))
+		int exp2 = otro->exponente(i);
+		int coef2 = otro->coeficiente(exp2);
+		pr->poner_termino(coef2, exp2);
+	}
+	return pr;
+}
+
+PoliLista* PoliLista::resta(PoliLista* otro) {
+	PoliLista *pr = new PoliLista();
+	for (int i = 0; i < nt; i++) {
+		int exp1 = this->exponente(i);
+		int coef1 = this->coeficiente(exp1);
+		pr->poner_termino(coef1, exp1);
+	}
+	for (int i = 0; i < otro->nt; i++) {
+		// poner_termino(p1.coeficiente(p2.exponente(i)), p2.exponente(i))
+		int exp2 = otro->exponente(i);
+		int coef2 = -otro->coeficiente(exp2);
+		pr->poner_termino(coef2, exp2);
+	}
+	return pr;
+}
+
+string PoliLista::toStr() {
+	string ret = "";
+	for (int i = 0; i < nt; i++) {
+		int exp = this->exponente(i);
+		int coef = this->coeficiente(exp);
+		string signo;
+		if (coef > 0)
+			signo = "+";
+		else {
+			signo = "-";
+			coef = coef*-1;
+		}
+		ret = ret + signo + to_string(coef) + "x^" + to_string(exp);
+	}
+	return ret;
+}

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/10/07 18:40:52.768,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 18:40:52.796,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/07 18:40:57.104,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project3PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/10/07 18:40:57.109,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project3.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/10/07 18:41:41.980,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/10/07 18:41:45.272,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Project3PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project3PCH1.h</Transaction>
+    <Transaction>2020/10/07 18:41:46.982,C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Project3.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project3.cbproj</Transaction>
+    <Transaction>2020/10/07 18:42:34.138,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:34.172,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:34.190,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:39.139,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:39.154,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Otros\UMemoria.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:44.461,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Pilas\PilaLista.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:44.498,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Pilas\PilaListaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:44.524,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Pilas\PilaPtr.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:44.552,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Pilas\PilaSm.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:44.566,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Pilas\PilaStr.cpp</Transaction>
+    <Transaction>2020/10/07 18:42:44.581,=C:\Users\pc\Desktop\Aux ED1 1-2020\Proyectos ED1\Proyectos\Proyecto 3(Parentesis)\Pilas\PilaVector.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

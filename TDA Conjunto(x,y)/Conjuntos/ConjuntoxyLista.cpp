@@ -1,0 +1,111 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ConjuntoxyLista.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ConjuntoxyLista::ConjuntoxyLista() {
+	lista = new ListaPtr();
+}
+
+bool ConjuntoxyLista::vacio() {
+	return lista->vacia();
+}
+
+int ConjuntoxyLista::cardinal() {
+	return lista->longitud() / 2;
+}
+
+int ConjuntoxyLista::ordinal(int x, int y) {
+	int c = 0;
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		c++;
+		int elemX = lista->recupera(aux);
+		int elemY = lista->recupera(lista->siguiente(aux));
+		if (elemX == x && elemY == y)
+			return c;
+		aux = lista->siguiente(lista->siguiente(aux));
+	}
+	return -1;
+	cout << "Elemento no encontrado\n";
+}
+
+void ConjuntoxyLista::inserta(int x, int y) {
+	if (!pertenece(x, y)) {
+		lista->inserta(lista->primero(), y);
+		lista->inserta(lista->primero(), x);
+	}
+}
+
+void ConjuntoxyLista::suprime(int x, int y) {
+	if (pertenece(x, y)) {
+		NodoL* aux = lista->primero();
+		while (aux != NULL) {
+			int elemX = lista->recupera(aux);
+			int elemY = lista->recupera(lista->siguiente(aux));
+			if (elemX == x && elemY == y) {
+				break;
+			}
+			aux = lista->siguiente(lista->siguiente(aux));
+		}
+		if (aux != NULL) {
+			lista->suprime(lista->siguiente(aux));
+			lista->suprime(aux);
+		}
+	}
+}
+
+bool ConjuntoxyLista::pertenece(int x, int y) {
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		int elemX = lista->recupera(aux);
+		int elemY = lista->recupera(lista->siguiente(aux));
+		if (elemX == x && elemY == y) {
+			break;
+		}
+		aux = lista->siguiente(lista->siguiente(aux));
+	}
+	if (aux == NULL)
+		return false;
+	else
+		return true;
+}
+
+void ConjuntoxyLista::elemento(int &x, int &y, int pos) {
+	int c = 0;
+	NodoL* aux = lista->primero();
+	while (aux != NULL) {
+		if (c == pos) {
+			x = lista->recupera(aux);
+			y = lista->recupera(lista->siguiente(aux));
+			return;
+		}
+		c++;
+		aux = lista->siguiente(lista->siguiente(aux));
+	}
+}
+
+void ConjuntoxyLista::muestrea(int &x, int &y) {
+	if (!vacio()) {
+		srand(time(NULL));
+		int pos = rand() % cardinal();
+		elemento(x, y, pos);
+	}
+}
+
+string ConjuntoxyLista::toStr() {
+	string r = "{";
+	for (int i = 0; i < cardinal(); i++) {
+		int x, y;
+		elemento(x, y, i);
+		r += "(" + to_string(x) + "," + to_string(y) + ")";
+		if (i < cardinal() - 1) {
+			r += ",";
+		}
+	}
+	r += "}";
+	return r;
+}

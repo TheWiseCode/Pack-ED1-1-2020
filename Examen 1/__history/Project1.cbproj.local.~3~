@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/20 07:17:04.000.175,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/08/20 07:17:04.000.040,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/20 07:17:23.000.373,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/20 07:17:23.000.339,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/20 07:17:35.000.508,C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\File1.cpp=C:\Users\pc\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:36.000.135,C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Project1PCH1.h=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/08/20 07:18:37.000.959,C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Project1.cbproj=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/08/20 07:18:45.000.009,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Conjunto\UConjuntoLista.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:45.000.037,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Conjunto\UConjuntoListaPtr.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:45.000.080,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Conjunto\UConjuntoSm.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:45.000.052,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Conjunto\UConjuntoPtr.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:45.000.109,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Conjunto\UConjuntoV.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:51.000.565,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Listas\ListaPtr.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:51.000.615,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Listas\ListaVector.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:51.000.590,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Listas\ListaSm.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:59.000.179,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Polinomios\UPoliListaPtr.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:59.000.258,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Polinomios\UPoliSm.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:59.000.202,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Polinomios\UPoliListaSm.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:59.000.281,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Polinomios\UPoliVector.cpp</Transaction>
+    <Transaction>2020/08/20 07:18:59.000.231,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Polinomios\UPoliPtr.cpp</Transaction>
+    <Transaction>2020/08/20 07:19:05.000.894,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Otros\Funciones.cpp</Transaction>
+    <Transaction>2020/08/20 07:19:05.000.925,=C:\Users\pc\Desktop\Aux ED1 1-2020\Examen 1\Otros\UMemoria.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

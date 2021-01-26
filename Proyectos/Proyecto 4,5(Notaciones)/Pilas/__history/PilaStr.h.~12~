@@ -1,0 +1,33 @@
+// ---------------------------------------------------------------------------
+
+#ifndef PilaStrH
+#define PilaStrH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include <stdlib.h>//atoi
+#include "Funciones.h"
+
+using namespace std;
+
+class PilaStr {
+private:
+	string k;
+
+public:
+	PilaStr();
+	bool vacia();
+	void meter(int e);
+	void sacar(int &e);
+	void meter1(int e);
+	void meterD(int e);
+	void meter3(int e);
+	void meter4(int e);
+	int cima1();
+	int cimaD();
+	int cima3();
+	int cima4();
+	int cima();
+	void mostrar();
+};
+#endif

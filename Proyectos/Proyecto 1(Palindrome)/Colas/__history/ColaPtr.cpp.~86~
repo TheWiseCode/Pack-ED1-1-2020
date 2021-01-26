@@ -1,0 +1,157 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ColaPtr.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ColaPtr::ColaPtr() {
+	ini = NULL;
+	fin = NULL;
+}
+
+bool ColaPtr::vacia() {
+	return ini == NULL;
+}
+
+void ColaPtr::poner(int e) {
+	direccion aux = new NodoCola;
+	if (aux != NULL) {
+		aux->elemento = e;
+		aux->sig = NULL;
+		if (vacia()) {
+			ini = aux;
+			fin = aux;
+		}
+		else {
+			fin->sig = aux;
+			fin = aux;
+		}
+	}
+}
+
+void ColaPtr::poner1(int e) {
+	NodoCola* aux = new NodoCola();
+	aux->elemento = e;
+	aux->sig = NULL;
+	if (vacia()) {
+		ini = aux;
+		fin = aux;
+		ini->sig = ini;
+		fin->sig = ini;
+	}
+	else {
+		fin->sig = aux;
+		fin = aux;
+		fin->sig = ini;
+	}
+}
+
+void ColaPtr::sacar1(int &e) {
+	if (!vacia()) {
+		e = ini->elemento;
+		NodoCola* aux = ini;
+		if (ini == fin) { // Un elemento
+			ini = NULL;
+			fin = NULL;
+		}
+		else {
+			ini = ini->sig;
+			fin->sig = ini;
+		}
+		delete(aux);
+	}
+}
+
+void ColaPtr::sacar(int &e) {
+	if (!vacia()) {
+		e = ini->elemento;
+		direccion x = ini;
+		if (ini == fin) {
+			ini = NULL;
+			fin = NULL;
+		}
+		else {
+			ini = ini->sig;
+		}
+		delete(x);
+	}
+}
+
+int ColaPtr::primero() {
+	if (!vacia()) {
+		return ini->elemento;
+	}
+}
+
+string ColaPtr::toStr() {
+	ColaPtr* aux = new ColaPtr();
+	string s = "<<";
+	while (!vacia()) {
+		int e;
+		sacar(e);
+		aux->poner(e);
+		s = s + to_string(e);
+		if (!vacia())
+			s = s + ",";
+	}
+	s = s + "<<";
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar(e);
+		poner(e);
+	}
+	return s;
+}
+
+void ColaPtr::mostrar() {
+	direccion aux = ini;
+	bool b = true;
+	while (aux != ini || b) {
+		cout << aux->elemento << ",";
+		aux = aux->sig;
+		b = false;
+	}
+	cout << endl;
+}
+
+int ColaPtr::ultimo() {
+	if (!vacia()) {
+		return fin->elemento;
+	}
+}
+
+void ColaPtr::sacar_final(int& e) {
+	if (!vacia()) {
+		e = fin->elemento;
+		direccion del = fin;
+		if (ini == fin) {
+			ini = NULL;
+			fin = NULL;
+		}
+		else {
+			direccion aux = ini;
+			while (aux->sig != fin) {
+				aux = aux->sig;
+			}
+			fin = aux;
+			fin->sig = NULL;
+		}
+		delete(del);
+	}
+}
+
+void ColaPtr::poner_frente(int e) {
+	direccion aux = new NodoCola;
+	if (aux != NULL) {
+		aux->elemento = e;
+		aux->sig = NULL;
+		if(vacia()){
+			ini = aux;
+			fin = aux;
+		}else{
+
+        }
+	}
+}

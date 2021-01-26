@@ -1,0 +1,79 @@
+// ---------------------------------------------------------------------------
+
+#ifndef UPoliPtrH
+#define UPoliPtrH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "Funciones.h"
+
+using namespace std;
+
+struct NodoPoli {
+	int coef;
+	int exp;
+	NodoPoli* sig;
+}
+
+class PoliPtr {
+private:
+	NodoPoli* ptrPoli;
+	int nt; // numero de terminos
+
+	// metodos privados
+	NodoPoli* existe_exponente(int exp);
+	NodoPoli* anterior(NodoPoli* p);
+	void suprime(NodoPoli* p);
+
+public:
+	PoliPtr();
+	bool es_cero();
+	void poner_termino(int coef, int exp);
+	int coeficiente(int exp);
+	int exponente(int nro);
+	int grado();
+	int numero_terminos();
+	PoliPtr *suma(PoliPtr *otro);
+	PoliPtr *resta(PoliPtr *otro);
+	string toStr();
+};
+
+NodoL* ListaPtr::anterior(NodoL* p) {
+	if (this->vacia()) {
+		cout << "LISTA VACIA\n";
+	}
+	else if (p == primero()) {
+		cout << "DIRECCION INCORRECTA\n";
+	}
+	else {
+		NodoL* x = ptrElementos;
+		NodoL* ant = NULL;
+		while (x != NULL) {
+			if (x == p) {
+				return ant;
+			}
+			ant = x;
+			x = x->sig;
+		}
+	}
+}
+
+void ListaPtr::suprime(NodoL* p) {
+	if (longi == 0) {
+		cout << "LISTA VACIA\n";
+		return;
+	}
+	else if (p == ptrElementos) {
+		NodoL*x = ptrElementos;
+		ptrElementos = ptrElementos->sig;
+		delete(x);
+	}
+	else {
+		NodoL* ant = anterior(p);
+		ant->sig = p->sig;
+		delete(p);
+	}
+	longi--;
+}
+
+#endif

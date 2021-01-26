@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef PilaListaH
+#define PilaListaH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include "ListaVector.h"
+#include "ListaSm.h"
+
+using namespace std;
+
+
+#endif

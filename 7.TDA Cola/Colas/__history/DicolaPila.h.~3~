@@ -1,0 +1,28 @@
+// ---------------------------------------------------------------------------
+
+#ifndef DicolaPilaH
+#define DicolaPilaH
+// ---------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+#include "Funciones.h"
+#include "PilaVector.h"
+using namespace std;
+
+class DicolaV {
+private:
+	PilaVector* K;
+
+public:
+	DicolaV();
+	void poner(int e);
+	void poner_frente(int e);
+	void sacar(int& e);
+	void poner1(int e);
+	void poner_frente1(int e);
+	void sacar1(int& e);
+	bool vacia();
+	int primero();
+	string toStr();
+};
+#endif

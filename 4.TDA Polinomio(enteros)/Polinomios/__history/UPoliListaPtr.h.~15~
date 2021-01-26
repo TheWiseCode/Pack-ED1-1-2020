@@ -1,0 +1,32 @@
+// ---------------------------------------------------------------------------
+
+#ifndef UCPoliHECZH
+#define UCPoliHECZH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "ListaPtr.h"
+
+using namespace std;
+
+class CPoliHECZ {
+private:
+	ListaPtr* lista;
+	int nt; // numero de terminos
+
+	// metodos privados
+	NodoL* exponente_existe(int exp);
+
+public:
+	CPoliHECZ();
+	bool es_cero();
+	void poner_termino(int coef, int exp);
+	int coeficiente(int exp);
+	int exponente(int nro);
+	int grado();
+	int numero_terminos();
+	CPoliHECZ* suma(CPoliHECZ* otro);
+	CPoliHECZ* resta(CPoliHECZ* otro);
+	string toStr();
+	void derivar();
+};

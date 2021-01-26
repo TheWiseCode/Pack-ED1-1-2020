@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#ifndef PilaPtrH
+#define PilaPtrH
+//---------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+struct NodoPila{
+	int elemento;
+	NodoPila* sig;
+};
+
+
+#endif

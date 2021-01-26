@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef MenusH
+#define MenusH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include "UPoliVector.h"
+#include "UPoliPtr.h"
+#include "UPoliSm.h"
+#include "UPoliListaPtr.h"
+#include "UPoliLista.h"
+#include "UMemoria.h"
+
+using namespace std;
+
+void menuSm(CSMemoria* m, PoliSm *p);
+
+#endif

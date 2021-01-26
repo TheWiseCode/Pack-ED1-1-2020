@@ -1,0 +1,178 @@
+#include <iostream>
+#include "PilaVector.h"
+#include "PilaListaPtr.h"
+#include "PilaLista.h"
+#include "PilaPtr.h"
+#include "PilaStr.h"
+#include "PilaSm.h"
+#include "UConjuntoSm.h"
+
+using namespace std;
+
+// Procedimiento q elimina todos los elementos igual a k de la pila
+void elimina(int k, PilaSm *p) {
+	PilaSm* aux = new PilaSm();
+	while (!p->vacia()) {
+		int e;
+		p->sacar(e);
+		aux->meter(e);
+	}
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar(e);
+		if (e != k)
+			p->meter(e);
+	}
+}
+
+void invierte(PilaSm* p) {
+	PilaSm* aux1 = new PilaSm();
+	PilaSm* aux2 = new PilaSm();
+	while (!p->vacia()) {
+		int e;
+		p->sacar(e);
+		aux1->meter(e);
+	}
+	while (!aux1->vacia()) {
+		int e;
+		aux1->sacar(e);
+		aux2->meter(e);
+	}
+	while (!aux2->vacia()) {
+		int e;
+		aux2->sacar(e);
+		p->meter(e);
+	}
+}
+
+void invierteLista(PilaSm *p) {
+	ListaPtr* l = new ListaPtr();
+	while (!p->vacia()) {
+		int e;
+		p->sacar(e);
+		l->inserta(l->primero(), e);
+	}
+	while (!l->vacia()) {
+		int e = l->recupera(l->fin());
+		l->suprime(l->fin());
+		p->meter(e);
+	}
+
+}
+
+int segundoMayor(PilaVector& P);
+
+void CambiarExtremos(PilaPtr& P) {
+	if (!P.vacia()) {
+		PilaPtr aux;
+		int prim;
+		P.sacar(prim);
+		while (!P.vacia()) {
+			int s;
+			P.sacar(s);
+			aux.meter(s);
+		}
+		int ult;
+		bool v = aux.vacia(); // Verifica q no este vacia para asi no sacar
+		if (!v)
+			aux.sacar(ult);
+		P.meter(prim);
+		while (!aux.vacia()) {
+			int s;
+			aux.sacar(s);
+			P.meter(s);
+		}
+		if (!v)
+			P.meter(ult);
+	}
+}
+
+void cambiarExtremos(PilaPtr& P) {
+	ListaPtr l;
+	while (!P.vacia()) {
+		int ele;
+		P.sacar(ele);
+		l.inserta(l.primero(), ele);
+	}
+	NodoL* ult = l.fin();
+	int dato = l.recupera(ult);
+	l.suprime(ult);
+	P.meter(dato);
+	int prim = l.recupera(l.primero());
+	l.suprime(l.primero());
+	while (!l.vacia()) {
+		NodoL* pp = l.primero();
+		int d = l.recupera(pp);
+		l.suprime(pp);
+		P.meter(d);
+	}
+	P.meter(prim);
+}
+
+int main() {
+	PilaPtr p;
+	p.meter(1);
+	p.meter(2);
+	// p.meter(3);
+	// p.meter(4);
+	p.mostrar();
+	cambiarExtremos(p);
+	cout << "----\n";
+	p.mostrar();
+	// int sdo = segundoMayor(p);
+	// cout << "2do mayor: " << sdo << endl;
+	/* CSMemoria* m = new CSMemoria();
+	 ConjuntoSm* c = new ConjuntoSm(m);
+	 PilaSm* p = new PilaSm(m);
+	 c->inserta(10);
+	 c->inserta(20);
+	 c->inserta(30);
+	 p->meter(40);
+	 p->meter(50);
+	 p->meter(60);
+	 cout << c->toStr() << endl;
+	 p->mostrar();
+	 m->mostrar_memoria(); */ system("pause");
+	return 0;
+}
+
+/* Bota error si hay un solo elemento,
+ si tiene 2 y son repetidos como ejm:
+ 1
+ 1
+ tambien bota error */
+int segundoMayor(PilaVector& P) {
+	bool encontro = false;
+	PilaVector aux;
+	int mayor = P.cima();
+	int sdoMayor;
+	while (!P.vacia()) {
+		int s;
+		P.sacar(s);
+		aux.meter(s);
+		if (s > mayor)
+			mayor = s;
+	}
+	bool cambio = false;
+	while (!aux.vacia()) {
+		int s;
+		aux.sacar(s);
+		P.meter(s);
+		if (!cambio) {
+			if (s < mayor) {
+				sdoMayor = s;
+				cambio = true;
+				encontro = true;
+			}
+		}
+		else {
+			if (s < mayor && s > sdoMayor)
+				sdoMayor = s;
+			encontro = true;
+		}
+	}
+	if (encontro)
+		return sdoMayor;
+	else
+		cout << "No hay 2do mayor en la pila" << endl;
+}

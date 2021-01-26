@@ -1,0 +1,49 @@
+// ---------------------------------------------------------------------------
+
+#ifndef MatrizSmDbH
+#define MatrizSmDbH
+// ---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "Funciones.h"
+#include "UMemoria.h"
+
+using namespace std;
+
+const string dataCol = "col,dato,sigC";
+const string colSm = "->col";
+const string datoSm = "->dato";
+const string colSm = "->sigC";
+
+const string dataFil = "fil,sigF,antF,ptrCol";
+const string sigF = "->sigF";
+const string antF  = "->antF";
+const string ptrCol = "->ptrCol";
+
+
+class MatrizSmDb {
+private:
+	CSMemoria *m;
+	int ptrMat;
+	int df, dc;
+	int rep;
+	int nt;
+
+	void insertar_fila(NodoFil* nf);
+	void insertar_col(NodoFil* nf, NodoCol* nc);
+	NodoFil* existe_fil(int f);
+	NodoCol* existe_col(NodoFil* f, int c);
+	NodoCol* anterior(NodoFil* nf, NodoCol* p);
+	void suprime(NodoFil* nf, NodoCol* p);
+
+public:
+	MatrizSmDb();
+	void dimensionar(int f, int c);
+	int dimension_fila();
+	int dimension_columna();
+	void poner(int f, int c, int valor);
+	int elemento(int f, int c);
+	void definir_valor_repetido(int r);
+	string toStr();
+};
+#endif

@@ -1,0 +1,129 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ColaVector3.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+ColaV3::ColaV3() {
+	v = new int[maxV3];
+	ini = 0;
+	fin = 0;
+}
+
+bool ColaV3::vacia() {
+	return ini == fin;
+}
+/*
+ void ColaV3::poner(int e) {
+ if (siguiente(fin) != ini) {
+ v[fin] = e;
+ fin = siguiente(fin);
+ }
+
+ }
+ */
+
+void ColaV3::poner(int e) {
+	int sig;//dir siguiente
+	if (fin == maxV3 - 1)
+		sig = 0;
+	else
+		sig = fin + 1;
+	if (sig != ini) {//Solo hago un sig y no Sig(sig) porque ini = 0 y fin = 0
+		v[fin] = e;
+		fin = sig;
+	}
+
+}
+
+void ColaV3::poner_frente(int e) {
+	int sig;
+	if (fin == maxV3 - 1)
+		sig = 0;
+	else
+		sig = fin + 1;
+	if (sig != ini) {//Solo hago un sig y no Sig(sig) porque ini = 0 y fin = 0
+		int ant;//dir anterior
+		if(ini == 0)
+			ant = maxV3 - 1;
+		else
+			ant = ini - 1;
+		ini = ant;
+		v[ini] = e;
+	}
+}
+
+void ColaV3::sacar(int &e) {
+	if (!vacia()) {
+		e = v[ini];
+		ini = siguiente(ini);
+	}
+}
+
+int ColaV3::primero() {
+	if (!vacia()) {
+		return v[ini];
+	}
+}
+
+int ColaV3::siguiente(int dir) {
+	return (dir + 1) % maxV3;
+	/*
+	 if (dir + 1 == maxV3)
+	 return 0;
+	 else
+	 return dir + 1; */
+}
+
+int ColaV3::anterior(int dir) {
+	if (dir > 0) {
+		return dir - 1;
+	}
+	else { // dir == 0
+		return maxV3 - 1;
+	}
+}
+
+string ColaV3::toStr() {
+	ColaV3* aux = new ColaV3();
+	string s = "<<";
+	while (!vacia()) {
+		int e;
+		sacar(e);
+		aux->poner(e);
+		s = s + to_string(e);
+		if (!vacia())
+			s = s + ",";
+	}
+	s = s + "<<";
+	while (!aux->vacia()) {
+		int e;
+		aux->sacar(e);
+		poner(e);
+	}
+	return s;
+}
+
+int ColaV3::ultimo() {
+	if (!vacia()) {
+		return v[anterior(fin)];
+	}
+}
+
+void ColaV3::sacar_final(int& e) {
+	if (!vacia()) {
+		e = v[anterior(fin)];
+		fin = anterior(fin);
+	}
+}
+
+/*
+ void ColaV3::poner_frente(int e) {
+ if (siguiente(fin) != ini) {
+ ini = anterior(ini);
+ v[ini] = e;
+ }
+ }
+ */
